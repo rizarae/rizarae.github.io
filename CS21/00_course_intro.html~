@@ -58,7 +58,7 @@
 				</section>
 
                 <section>
-					<h2>Hello there!</h2>
+					<h1>Hello there!</h1>
 				</section>
 
                 <section>
@@ -222,8 +222,16 @@
                         <li>Patterson, David, and John Hennessy. <span class="green">Computer Organization and Design: The Hardware/Software Interface</span>. 3rd. Elsevier, 2005</li>
                         <li>Hayes, John. <span class="green">Introduction to Digital Logic Design</span>. Addison-Wesley. 1994</li>
                         <li>Hayt, William et al. <span class="green">Engineering Circuit Analysis</span>. 6th. McGrawhill, 2002</li>
-                        <li>Lecture slides and other resources will be uploaded at <i class="green">http://bit.ly/cs21niTope</i></li>
+                        <li>Lecture slides and other resources at <i class="green">http://kedelaspenas.github.io/CS21</i></li>
                     </ul>
+				</section>
+
+                <section>
+					<h1>History of Computers</h1>
+				</section>
+
+                <section>
+					<h2>Zeroth Generation</h2>
 				</section>
 			</div>
 		</div>
