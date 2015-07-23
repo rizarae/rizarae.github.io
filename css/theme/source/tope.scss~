@@ -1,0 +1,299 @@
+/**
+ * Tope theme for reveal.js.
+ *
+ * Copyright (C) 2014 Kristofer E. delas Penas
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(../fonts/sKd0EMYPAh5PYCRKSryvW1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(../fonts/32nyIRHyCu6iqEka_hbKsugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/DXI1ORHCpsQm3Vp6mXoaTRUOjZSKWg4xBWp_C_qQx0o.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/u-WUoqrET9fUeobQW7jkRVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/k3k702ZOKiLJc3WVjuplzBUOjZSKWg4xBWp_C_qQx0o.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(../fonts/PRmiXeptR36kaC0GEAetxo05NJhCxBV64hQBJiatqx0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(../fonts/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/xjAJXh38I15wypJXxuGMBqg5eI2G47JWe0-AuFtD150.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: #333;
+$mainFontSize: 18px;
+$headingFont: 'Quicksand', sans-serif;
+$headingColor: #333;
+$headingTextShadow: none;
+$backgroundColor: #fff;
+$linkColor: #3b759e;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+// Background generator
+@mixin bodyBackground() {
+	
+}
+
+// DO NOT CENTER BY DEFAULT 
+.reveal .slides {
+	text-align: left;
+}   
+.green {
+    color: green !important;
+}
+strike {
+    color: red;
+}
+strike * {
+    color: $mainColor;
+}
+.center {
+	text-align: center;
+}
+.reveal .slides p, .reveal .slides ul, .reveal .slides ol, .reveal .slides cite {
+	font-weight: normal;
+    line-height: 200%;
+}
+.reveal .slides cite {
+	display: block;
+}
+.reveal .slides cite:before {
+	content: "\2014";
+}
+.reveal .slides img {
+	margin: 0;
+	padding: 0;
+}
+.reveal pre {
+	box-shadow: none !important;
+	margin: 0 !important;
+	width: 100% !important;
+	word-wrap: normal !important;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+div.legend {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+span.legend-color {
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.row {
+	width: 100%;
+	clear: both;
+}
+.tile {
+	float: left;
+	text-transform: uppercase;
+}
+.tile-normal {
+	text-transform: none;
+}
+.tile-12 {
+	width: 100%;
+}
+.tile-6 {
+	width: 50%;
+	height: 480px;
+}
+.tile-3 {
+	width: 25%;
+	height: 240px;
+}
+.tile-4 {
+	width: 33%;
+	height: 320px;
+}
+.tile > * {
+	color: #fff !important;
+	padding: 0 10px!important;
+}
+.tile p {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align: center;
+}
+.tile-12 p {
+	top: 0;
+	transform: none;
+}
+.tile-12:nth-child(1) {
+	background: #218C8D;
+}
+.tile-12:nth-child(2) {
+	background: #6CCECB;
+}
+.tile-12:nth-child(3) {
+	background: #EF7126;
+}
+.tile-12:nth-child(4) {
+	background: #8EDC9D;
+}
+.tile-12:nth-child(5) {
+	background: #F2C249;
+}
+.tile-12:nth-child(6) {
+	background: #E6772E;
+}
+.tile-12:nth-child(7) {
+	background: #4DB3B3;
+}
+.tile-12:nth-child(8) {
+	background: #E64A45;
+}
+.tile-6:nth-child(1) {
+	background: #257E78;
+}
+.tile-6:nth-child(2) {
+	background: #40B8AF;
+}
+.tile-4:nth-child(1) {
+	background: #218C8D;
+}
+.tile-4:nth-child(2) {
+	background: #6CCECB;
+}
+.tile-4:nth-child(3) {
+	background: #EF7126;
+}
+.row:nth-of-type(1) .tile-3:nth-child(1) {
+	background: #218C8D;
+}
+.row:nth-of-type(1) .tile-3:nth-child(2) {
+	background: #6CCECB;
+}
+.row:nth-of-type(1) .tile-3:nth-child(3) {
+	background: #EF7126;
+}
+.row:nth-of-type(1) .tile-3:nth-child(4) {
+	background: #8EDC9D;
+}
+.row:nth-of-type(2) .tile-3:nth-child(1) {
+	background: #F2C249;
+}
+.row:nth-of-type(2) .tile-3:nth-child(2) {
+	background: #E6772E;
+}
+.row:nth-of-type(2) .tile-3:nth-child(3) {
+	background: #4DB3B3;
+}
+.row:nth-of-type(2) .tile-3:nth-child(4) {
+	background: #E64A45;
+}
+.tile-clr {
+	background: none !important;
+}
+.text-left {
+	text-align: left !important;
+}
+table td, table th {
+	color: #333;
+}
+table td:last-child {
+	color: green;
+}
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
