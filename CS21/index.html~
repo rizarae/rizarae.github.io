@@ -41,16 +41,45 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h2>File Repository</h2>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>File Repository</h3>
 					<p class="center">
 						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
 					</p>
 				</section>
 
 				<section>
-					<h2>Courses</h2>
+					<h2>Syllabus</h2>
                     <ol>
-                        <li><a href="/CS21/index.html"></a></li>
+                        <li><a href="/syllabus.pdf">Course Syllabus</a></li>
+                    </ol>
+				</section>
+
+				<section>
+					<h2>Computer Organization Lecture Slides</h2>
+                    <ol>
+                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
+                    </ol>
+				</section>
+
+				<!--<section>
+					<h2>Electronics Lecture Slides</h2>
+                    <ol>
+                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
+                    </ol>
+				</section>-->
+
+				<!--<section>
+					<h2>Microcontroller Programming Lecture Slides</h2>
+                    <ol>
+                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
+                    </ol>
+				</section>-->
+
+				<section>
+					<h2>Assembly Language Programming Lecture Slides</h2>
+                    <ol>
+                        <!---<li><a href="/00_course_intro.html">Course Introduction</a></li>-->
                     </ol>
 				</section>
 			</div>
