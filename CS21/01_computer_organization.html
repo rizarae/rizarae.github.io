@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 21: Computer Organization and Assembly Language Programming</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>Computer Organization and Number Systems</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>Computer Layers</li>
+                        <li>Machine Language</li>
+                        <li>Number Representation</li>
+                    </ol>
+				</section>
+
+                <section>
+					<h2>Computer <span=class="green">Layers</span></h2>
+				</section>
+
+                <section>
+					<h2>Computer Layers</h2>
+                    
+				</section>
+
+                <section>
+					<h2>Computer Layers</h2>
+                    <h3>System Software</h3>
+                    <ul>
+                        <li>BIOS/UEFI</li>
+                        <li>Device Drivers</li>
+                        <li>Operating System</li>
+                        <li>Compiler</li>
+                    </ul>
+				</section>
+
+                <section>
+					<h2>Computer Layers</h2>
+                    <h3>Application</h3>
+                    <ul>
+                        <li>Word Processor</li>
+                        <li>Web Browser</li>
+                        <li>Database Management Tools</li>
+                        <li>Games</li>
+                    </ul>
+				</section>
+
+                <section>
+					<h2>What happens when you switch your computer <span class="green">on</span>?</h2>
+                    <ol>
+                        <li>BIOS/EFI loads</li>
+                        <li>Devices are scanned</li>
+                        <li>MBR/GPT is scanned</li>
+                        <li>Bootloader takes over and loads the OS</li>
+                        <li>Drivers for scanned devices are loaded</li>
+                    </ol>
+				</section>
+
+                <section>
+					<h2>Hierarchy of Programming Languages</h2>
+				</section>
+
+                <section>
+					<h2><span class="green">Number</span> Systems</h2>
+				</section>
+
+                <section>
+					<h2>Number Systems</h2>
+                    <p>Integers could be represented in any <span class="green">base</span>.</p>
+                    <p class="fragment">In a base system, digits are limited to 0 to (base - 1).</p>
+				</section>
+
+                <section>
+					<h2><span class="green">Decimal</span> and <span class="green">Binary</span> Number Systems</h2>
+                    <p>Base <span class="green">10</span> is natural for humans.</p>
+                    <img width=700 src="/img/10fingers.jpg" />
+                    <p class="fragment">Base 2 is what computers use.</p>
+				</section>
+
+                <section>
+					<h2>Base Conversions</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
