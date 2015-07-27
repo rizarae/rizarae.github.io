@@ -100,8 +100,12 @@
                         <li>Low portability</li>
                         <li>Difficult to debug/maintain</li>
                     </ul>
-                    <h3>In short, it is hard to program in assembly language!</h3>
-                    <h1>But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></h1>
+				</section>
+
+                <section>
+					<h2><span class="green">Assembly</span> Language</h2>
+                    <h3>Bottomline is, it is hard to program in assembly language!</h3>
+                    <h3>But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></h3>
 				</section>
 
                 <section>
