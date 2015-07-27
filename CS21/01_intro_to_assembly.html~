@@ -105,7 +105,7 @@
                 <section>
 					<h2><span class="green">Assembly</span> Language</h2>
                     <h3>Bottomline is, it is hard to program in assembly language!</h3>
-                    <h3>But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></h3>
+                    <h3 class="fragment">But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></h3>
 				</section>
 
                 <section>
