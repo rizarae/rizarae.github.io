@@ -104,8 +104,8 @@
 
                 <section>
 					<h2><span class="green">Assembly</span> Language</h2>
-                    <h3>Bottomline is, it is hard to program in assembly language!</h3>
-                    <h3 class="fragment">But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></h3>
+                    <p class="center">Bottomline is, it is hard to program in assembly language!</p>
+                    <p class="center fragment">But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></p>
 				</section>
 
                 <section>
@@ -115,6 +115,35 @@
                         <li>Greater control</li>
                         <li>Sometimes, there is <span class="green">no choice</span>!</li>
                     </ul>
+				</section>
+
+                <section>
+					<h2><span class="green">Compilers</span> and Assemblers</h2>
+				</section>
+
+                <section>
+					<h2>High-Level Language vs <span class="green">Assembly Language</span></h2>
+                    <ul>
+                        <li>No variables, only <span class="green">registers</span></li>
+                        <li>Direct memory space access</li>
+                        <li>No data types!</li>
+                    </ul>
+				</section>
+
+                <section>
+					<h2><span class="green">Pure and Extended</span> Assembly Language</h2>
+				</section>
+
+                <section>
+					<h2><span class="green">Instruction Set</span> Architecture</h2>
+				</section>
+
+                <section>
+    				<h2><span class="green">MIPS</span></h2>
+				</section>
+
+                <section>
+    				<h2><span class="green">Load Immediate</span></h2>
 				</section>
 
 			</div>
