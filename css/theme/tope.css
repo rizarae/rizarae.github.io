@@ -119,7 +119,8 @@ strike * {
   box-shadow: none !important;
   margin: 0 !important;
   width: 100% !important;
-  word-wrap: normal !important; }
+  word-wrap: normal !important;
+  font-size: 1em !important; }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   width: 100%;

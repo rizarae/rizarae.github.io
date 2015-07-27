@@ -291,7 +291,7 @@ span.legend-color {
 table td, table th {
 	color: #333;
 }
-table td:last-child {
+th:last-child, td:last-child {
 	color: green;
 }
 // Theme template ------------------------------
