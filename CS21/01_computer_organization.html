@@ -136,7 +136,7 @@
 
                 <section>
 					<h2>Decimal to <span class="green">Binary</span></h2>
-					<h4>Convert 125 to binary.</h4>
+					<h3>Convert 125 to binary.</h3>
 					<pre>
 						<code>
 	125 / 2 = 62 r. 1
@@ -213,12 +213,24 @@
 				</section>
 
                 <section>
+					<h2>Decimal to <span class="green">Hexadecimal</span></h2>
+                    <h3>Convert the following decimal numbers to hexadecimal.</h3>
+                    <ol>
+						<li>1080</li>
+						<li>2015</li>
+						<li>12 345</li>
+						<li>170</li>
+						<li>65536</li>
+                    </ol>
+				</section>
+
+                <section>
 					<h2>Why use <span class="green">hexadecimal</span>?</h2>
 					<h3>It is a <span class="green">shorthand</span> for the binary number system!</h3>
 				</section>
 
                 <section>
-					<h2>Binary and<span class="green">Hexadecimal</span>?</h2>
+					<h2>Binary and<span class="green"> Hexadecimal</span></h2>
 					<h3>Terms</h3>
 					<ul>
 						<li>Bit</li>
@@ -229,9 +241,138 @@
 				</section>
 
                 <section>
-					<h2>Binary and<span class="green">Hexadecimal</span>?</h2>
+					<h2>Binary and<span class="green"> Hexadecimal</span></h2>
 					<h3>One hex digit is a <span class="green">nibble</span>.</h3>
+                    <pre>
+                        <code>
+    0000 - 0        1000 - 8
+    0001 - 1        1001 - 9
+    0010 - 2        1010 - A
+    0011 - 3        1011 - B
+    0100 - 4        1100 - C
+    0101 - 5        1101 - D
+    0110 - 6        1110 - E
+    0111 - 7        1111 - F
+                        </code>
+                    </pre>
 				</section>
+
+                <section>
+					<h2>Binary and<span class="green"> Hexadecimal</span></h2>
+					<h3>Convert the following binary numbers to hexadecimal</h3>
+					<ol>
+						<li>1100 1001</li>
+						<li>1001 1011</li>
+						<li>1010 1111</li>
+						<li>1100 1001</li>
+						<li>11 0100 1101</li>
+					</ol>
+				</section>
+
+                <section>
+					<h2>Binary and<span class="green"> Hexadecimal</span></h2>
+					<h3>Convert the following hexadecimal numbers to binary</h3>
+					<ol>
+						<li>deadbeef</li>
+						<li>decade</li>
+						<li>dec0de</li>
+						<li>0ddba11</li>
+						<li>f1eece</li>
+					</ol>
+				</section>
+
+                <section>
+                    <h2>Representing <span class="green">Negative</span> Integers</h2>
+                </section>
+
+                <section>
+                    <h2>Representing <span class="green">Negative</span> Integers</h2>
+                    <ul>
+                        <li>Sign-magnitude</li>
+                        <li>One's Complement</li>
+                        <li>Two's Complement</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Sign-<span class="green">Magnitude</span></h2>
+                    <p>Allocate <span class="green">one bit</span> to represent <span class="green">sign</span> (0 for positive, 1 for negative). Use the <span class="green">remaining bits</span> to represent the <span class="green">magnitude</span>.</p>
+                </section>
+
+                <section>
+                    <h2>Sign-<span class="green">Magnitude</span></h2>
+                    <p>In an 8-bit computer, below are the sign-magnitude representations for some signed integers.</p>
+                    <pre>
+                        <code>
+    -125 : 1111 1101
+     125 : 0111 1101
+      36 : 0010 0100
+     -36 : 1010 0100
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h2><span class="green">One's</span> Complement</h2>
+                    <p>The ones' complement of a binary number is obtained by <span class="green">inverting all the bits</span> in the binary representation of the number.</p>
+                </section>
+
+                <section>
+                    <h2><span class="green">One's</span> Complement</span></h2>
+                    <p>In an 8-bit computer, below are the one's complement representations for some signed integers.</p>
+                    <pre>
+                        <code>
+    -125 : 1000 0010
+     125 : 0111 1101
+      36 : 0010 0100
+     -36 : 1101 1011
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h2>Representing <span class="green">Zero</span></h2>
+                    <p>Both <span class="green">sign-magnitude</span> and <span class="green">one's complement</span> have two representations for zero. <i>This poses some ambiguities in binary operations</i>.</p>
+                </section>
+
+                <section>
+                    <h2>Representing <span class="green">Zero</span></h2>
+                    <pre>
+                        <code>
+    0 (s/m) : 1000 0000 (-0)
+              0000 0000 (+0)
+
+    0 (1c)  : 0000 0000 (+0)
+              1111 1111 (-0)
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h2><span class="green">Two's</span> Complement</h2>
+                    <p>Removes the double representation of zero in one's complement.</p>
+                </section>
+
+                <section>
+                    <h2><span class="green">Two's</span> Complement</h2>
+                    <p>Apply One's Complement, then add 1.</p>
+                </section>
+
+                <section>
+                    <h2>Representing <span class="green">Signed</span> Integers</h2>
+                    <h3>Convert the following signed decimal numbers to binary (sign-magnitude, one's complement, two's complement). Assume an 8-bit computer.</h3>
+                    <ol>
+                        <li>125</li>
+                        <li>-67</li>
+                        <li>-31</li>
+                        <li>101</li>
+                        <li>-127</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2><span class="green">Representable</span> Range of Values</h2>
+                </section>
 			</div>
 		</div>
 
