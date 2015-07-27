@@ -116,18 +116,133 @@
                 <section>
 					<h2><span class="green">Decimal</span> and <span class="green">Binary</span> Number Systems</h2>
                     <p>Base <span class="green">10</span> is natural for humans.</p>
-                    <img width=700 src="/img/10fingers.jpg" />
+                    <figure>
+                        <img width=700 src="/img/10fingers.jpg" />
+                        <figcaption class="center">Source: <i>http://i.ytimg.com/vi/ldibzs0jB6I/maxresdefault.jpg</i></figcaption>
+                    </figure>
                     <p class="fragment">Base 2 is what computers use.</p>
 				</section>
 
                 <section>
-					<h2>Base Conversions</h2>
+					<h2><span class="green">Base</span> Conversions</h2>
+				</section>
+
+                <section>
+					<h2>Decimal to <span class="green">Binary</span></h2>
+					<h4>Divide the decimal number by 2. Store the <span class="green">remainder</span>.</h4>
+					<h4>Continuously divide the quotient by 2 until 0.</h4>
+					<h4>Read the remainders in <span class="green">reverse acquisition</span> order.</h4>
+				</section>
+
+                <section>
+					<h2>Decimal to <span class="green">Binary</span></h2>
+					<h4>Convert 125 to binary.</h4>
+					<pre>
+						<code>
+	125 / 2 = 62 r. 1
+	 62 / 2 = 31 r. 0
+	 31 / 2 = 15 r. 1
+	 15 / 2 = 7  r. 1
+	  7 / 2 = 3  r. 1
+	  3 / 2 = 1  r. 1
+	  1 / 2 = 0  r. 1 
+						</code>
+					</pre>
+					<h4 class="fragment"><span class="green">Answer:</span> 111 1101</h4>
+				</section>
+
+                <section>
+					<h2>Decimal to <span class="green">Binary</span></h2>
+					<h3>Convert the following decimal numbers to binary.</h3>
+					<ol>
+						<li>1080</li>
+						<li>2015</li>
+						<li>12 345</li>
+						<li>170</li>
+						<li>65536</li>
+					</ol>
+				</section>
+
+                <section>
+					<h2>Binary to <span class="green">Decimal</span></h2>
+					<h4>Going from left to right, multiply each bit with increasing powers of two, starting with \(2^0\).</h4>
+					<h4>Add the <span class="green">products</span>.</h4>
+				</section>
+
+                <section>
+					<h2>Binary to <span class="green">Decimal</span></h2>
+					<h4>Convert \(111 1101_2\) to binary.</h4>
+					<pre>
+						<code>
+							1 * 1  = 1
+							0 * 2  = 0
+							1 * 4  = 4
+							1 * 8  = 8
+							1 * 16 = 16
+							1 * 32 = 32
+							1 * 64 = 64
+
+							1 + 0 + 4 + 8 + 16 + 32 + 64 = 125
+						</code>
+					</pre>
+				</section>
+
+                <section>
+					<h2>Binary to <span class="green">Decimal</span></h2>
+					<h3>Convert the following to decimal.</h3>
+					<ol>
+						<li>1100 1001</li>
+						<li>1001 1011</li>
+						<li>1010 1111</li>
+						<li>1100 1001</li>
+						<li>11 0100 1101</li>
+					</ol>
+				</section>
+
+                <section>
+					<h2><span class="green">Hexadecimal</span></h2>
+					<h3>Base <span class="green">16</span> number system</h3>
+					<p>Uses the numbers 0-9 with letters A-F for 10-15 as digits.</p>
+				</section>
+
+                <section>
+					<h2>Decimal to <span class="green">Hexadecimal</span></h2>
+					<h4>Divide the decimal number by 16. Store the <span class="green">remainder</span>.</h4>
+					<h4>Continuously divide the quotient by 16 until 0.</h4>
+					<h4>Read the remainders (and replace with corresponding hex digit) in <span class="green">reverse acquisition</span> order.</h4>
+				</section>
+
+                <section>
+					<h2>Why use <span class="green">hexadecimal</span>?</h2>
+					<h3>It is a <span class="green">shorthand</span> for the binary number system!</h3>
+				</section>
+
+                <section>
+					<h2>Binary and<span class="green">Hexadecimal</span>?</h2>
+					<h3>Terms</h3>
+					<ul>
+						<li>Bit</li>
+						<li>Nibble</li>
+						<li>Byte</li>
+						<li>Word</li>
+					</ul>
+				</section>
+
+                <section>
+					<h2>Binary and<span class="green">Hexadecimal</span>?</h2>
+					<h3>One hex digit is a <span class="green">nibble</span>.</h3>
 				</section>
 			</div>
 		</div>
 
 		<script src="/lib/js/head.min.js"></script>
 		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 		<script>
 
