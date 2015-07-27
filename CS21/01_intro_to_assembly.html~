@@ -69,13 +69,15 @@
                 <section>
 					<h2><span class="green">Assembly</span> Language</h2>
                     <p class="center">A machine instruction corresponds to some human-readable instruction.</p>
-                    <pre class="fragment">
+                    <div class="fragment">
+                    <pre>
                         <code>
     11101111 00000001 00000100 00000101
     = add r1, r4, r5
                         </code>
                     </pre>
                     <p class="center">This is called <span class="green">assembly language</span>.</p>
+                    </div>
 				</section>
 
                 <section>
@@ -99,7 +101,7 @@
                         <li>Difficult to debug/maintain</li>
                     </ul>
                     <h3>In short, it is hard to program in assembly language!</h3>
-                    <h1>But in this class, you will!<br/> Because you <span class="green">love</span> the challenge! >:)</h1>
+                    <h1>But in this class, you will!<br/><span class="fragment"> Because you <span class="green">love</span> the challenge! >:)</span></h1>
 				</section>
 
                 <section>
