@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 21: Computer Organization and Assembly Language Programming</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>Memory: Part 2</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>Main Memory</li>
+                        <li>External Memory</li>
+                    </ol>
+				</section>
+
+				<section>
+					<h2>Memory</h2>
+				</section>
+
+				<section>
+					<h2>Memory</h2>
+                    <p class="center">In <span class="green">human terms</span>, it is the totality of what you remember</p>
+				</section>
+
+				<section>
+					<h2>Memory</h2>
+                    <p class="center>In <span class="green">computers</span>, structure used to store instructions and data</p>
+				</section>
+
+				<section>
+					<h2>Memory</h2>
+                    <p class="center">Exhibits the widest range of type, technology, organization, performance and cost in any feature of a computer system</p>
+				</section>
+
+				<section>
+					<h2>No memory = <span class="green">No computer</span>!</h2>
+				</section>
+
+				<section>
+					<h2>Computer Memory</h2>
+                    <h3>by <span class="green">Location</span></h3>
+                    <p class="center">CPU memory</p>
+                    <p class="center">Internal memory</p>
+                    <p class="center">External memory</p>
+				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Characteristics</span> of Memory</h2>
+                    <p class="center">Cost</p>
+                    <p class="center">Capacity</p>
+                    <p class="center">Access Time</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Characteristics</span> of Memory</h2>
+                    <p class="center">Faster access time, higher cost</p>
+                    <p class="center">Greater capacity, slower access time</p>
+				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+                    <figure>
+                        <img src="/img/hierarchy.png" width=700 />
+                    </figure>
+				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+                    <p class="center">A memory hierarchy uses <span class="green">several types</span> of memory</p>
+                    <p class="center">The amount of memory type is <span class="green">inversely proportional</span> to its cost</p>
+                    <p class="center">Very few of fast, expensive memory types and lots of slow, cheap memory types</p>
+				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+                    <p class="center">The hierarchy is <span class="green">invisible</span> to the user</p>
+                    <p class="center fragment">Except the <span class="green">registers</span> when programming in <span class="green">assembly</span></p>
+				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+                    <p class="center">A higher level only contains a <span class="green">copy of the subset</span> of the memory below it</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Spatial</span> Locality</h2>
+                    <p class="center">Tendency of programs to <span class="green">access items</span> from memory that are <span class="green">near each other</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Temporal</span> Locality</h2>
+                    <p class="center">Tendency of programs to <span class="green">access items</span> from memory <span class="green">repeatedly</span></p>
+				</section>
+
+				<section>
+					<h2>Registers</h2>
+				</section>
+
+				<section>
+					<h2>Registers</h2>
+                    <p class="center">Memory <span class="green">closest</span> to the ALU</p>
+                    <p class="center">Contained in the CPU</p>
+                    <p class="center"><span class="green">Fastest</span> memory</p>
+                    <p class="center">Grouped into <span class="green">files</span></p>
+				</section>
+
+				<section>
+					<h2>Registers</h2>
+                    <figure class="center">
+                        <img src="/img/reglayout.jpg" width=500 />
+                    </figure>
+				</section>
+
+				<section>
+					<h2>Cache</h2>
+				</section>
+
+				<section>
+					<h2>Cache</h2>
+                    <p class="center"><span class="green">Intermediary</span> between registers and main memory</p>
+                    <p class="center">Provides both <span class="green">speed</span> and <span class="green">size</span></p>
+				</section>
+
+				<section>
+					<h2>Cache</h2>
+                    <p class="center">In systems with cache, the processor <span class="green">could only access the cache</span> and not the main memory</p>
+				</section>
+
+				<section>
+					<h2>Cache <span class="green">Operation</span></h2>
+				</section>
+
+				<section>
+					<h2>Cache <span class="green">Performance</span></h2>
+                    <p class="center"><span class="green">Hit</span> - access an item found in the cache</p>
+                    <p class="center"><span class="green">Miss</span> - access an item NOT found in the cache</p>
+				</section>
+
+				<section>
+					<h2>Cache <span class="green">Performance</span></h2>
+                    <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. What is the <span class="green">hit rate</span>? <span class="green">Miss rate</span>?</p>
+				</section>
+
+				<section>
+					<h2>Cache <span class="green">Performance</span></h2>
+                    <p class="center"><span class="green">Hit Time</span> - time needed to access data FOUND in the cache</p>
+                    <p class="center"><span class="green">Miss Penalty</span> - time needed to transfer data from main memory to cache</p>
+				</section>
+
+				<section>
+					<h2>Cache <span class="green">Performance</span></h2>
+                    <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. Assuming that the <span class="green">hit time</span> is <span class="green">2ns</span>, and the <span class="green">miss penalty</span> is <span class="green">7ns</span>, what is the <span class="green">total time</span> spent for memory access?</p>
+				</section>
+
+				<section>
+					<h2>Elements of <span class="green">Cache Design</span></h2>
+                    <p class="center">Cache Size</p>
+                    <p class="center">Mapping Function</p>
+                    <p class="center">Replacement Algorithm</p>
+                    <p class="center">Write Policy</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Cache </span>Size</h2>
+                    <p class="center"><span class="green">Big enough</span> that we don’t waste time accessing main memory</p>
+                    <p class="center"><span class="green">Small enough</span> that it is still <span class="green">fast</span> and <span class="green">cheap</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Mapping </span>Function</h2>
+                    <p class="center">Policy on where <span class="green">data</span> from the main memory would <span class="green">reside on the cache</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Mapping </span>Function</h2>
+                    <p class="center">Direct Mapping</p>
+                    <p class="center">Fully Associative Mapping</p>
+                    <p class="center">Set Associative Mapping</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Direct </span>Mapping</h2>
+                    <p class="center">Each memory location is mapped to exactly ONE location in the cache</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Fully-Associative </span>Mapping</h2>
+                    <p class="center">A memory location could go to any cache location</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Set-Associative </span>Mapping</h2>
+                    <p class="center">Hybrid between Direct Mapping and Fully-Associative Mapping</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Replacement </span>Algorithms</h2>
+                    <p class="center">FIFO</p>
+                    <p class="center">LRU</p>
+                    <p class="center">LFU</p>
+                    <p class="center">Random</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Write </span>Policy</h2>
+                    <p class="center">Write <span class="green">Through</span></p>
+                    <p class="center">Write <span class="green">Back</span></p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
