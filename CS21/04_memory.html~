@@ -82,7 +82,8 @@
 				</section>
 
 				<section>
-					<h2>Computer Memory (by <span class="green">Location</span>)</h2>
+					<h2>Computer Memory</h2>
+                    <h3>by <span class="green">Location</span></h3>
                     <p class="center">CPU memory</p>
                     <p class="center">Internal memory</p>
                     <p class="center">External memory</p>
@@ -115,9 +116,61 @@
 				<section>
 					<h2>Memory <span class="green">Hierarchy</span></h2>
                     <p class="center">A memory hierarchy uses <span class="green">several types</span> of memory</p>
-                    <p class="center">The amount of memory type present in the hierarchy is <span class="green">inversely proportional</span> to its cost</p>
+                    <p class="center">The amount of memory type is <span class="green">inversely proportional</span> to its cost</p>
                     <p class="center">Very few of fast, expensive memory types and lots of slow, cheap memory types</p>
 				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+                    <p class="center">The hierarchy is <span class="green">invisible</span> to the user</p>
+                    <p class="center fragment">Except the <span class="green">registers</span> when programming in <span class="green">assembly</span></p>
+				</section>
+
+				<section>
+					<h2>Memory <span class="green">Hierarchy</span></h2>
+                    <p class="center">A higher level only contains a <span class="green">copy of the subset</span> of the memory below it</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Spatial</span> Locality</h2>
+                    <p class="center">Tendency of programs to <span class="green">access items</span> from memory that are <span class="green">near each other</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Temporal</span> Locality</h2>
+                    <p class="center">Tendency of programs to <span class="green">access items</span> from memory <span class="green">repeatedly</span></p>
+				</section>
+
+				<section>
+					<h2>Registers</h2>
+				</section>
+
+				<section>
+					<h2>Registers</h2>
+                    <p class="center">Memory closest to the ALU</p>
+                    <p class="center">Contained in the CPU</p>
+                    <p class="center">Fastest memory</p>
+                    <p class="center">Grouped into files</p>
+				</section>
+
+				<section>
+					<h2>Registers</h2>
+                    <figure>
+                        <img src="/img/reglayout.jpg" width=700 />
+                    </figure>
+				</section>
+
+				<section>
+					<h2>Cache</h2>
+                    <p class="center">Intermediary between registers and main memory</p>
+                    <p class="center">Provides both speed and size</p>
+				</section>
+
+				<section>
+					<h2>Cache</h2>
+                    <p class="center">In systems with cache, the processor could only access the cache and not the main memory</p>
+				</section>
+
 			</div>
 		</div>
 
