@@ -61,6 +61,144 @@
 					<h2>Addition and <span class="green">Subtraction</span></h2>
 				</section>
 
+                <section>
+					<h2>Recap: Two's Complement</span></h2>
+                    <h3>Representation of negative numbers in binary</h3>
+                    <p class="center fragment">Apply One's Complement. Add 1.</p>
+				</section>
+
+                <section>
+					<h2><span class="green">Unsigned</span> Addition</h2>
+                    <pre>
+                        <code>
+    0000 1001       0101 0001
+  + 1010 0101     + 1100 1000
+  -----------     -----------
+    1010 1110      10001 1001 (overflow!)
+                        </code>
+                    </pre>
+				</section>
+
+                <section>
+					<h2><span class="green">Signed</span> Addition (2C)</h2>
+                    <pre>
+                        <code>
+    0000               0001               0101
+  + 0101             + 1000             + 1100
+  ------             ------             ------
+    0101               1001              10001 (overflow?)
+
+    0100               1100               1010
+  + 0101             + 1101             + 1001
+  ------             ------             ------
+    1001 (correct?)   11001 (overflow?)   10011 (overflow)
+                        </code>
+                    </pre>
+				</section>
+
+                <section>
+					<h2>Subtraction</h2>
+                    <h3>A - B = A + (-B)</h3>
+                    <p class="center fragment">To perform subtraction, <span class="green">negate the subtrahend</span>, then proceed with addition.</p>
+				</section>
+
+                <section>
+					<h2>Subtraction</h2>
+                    <h3>0111 - 0100 (Assume 4-bit computer)</h3>
+                    <pre class="fragment">
+                        <code>
+    1. Negate 0100 using 2C.
+        0100 -> 1011 -> 1100
+    2. Perform addition.
+        0111
+      + 1100
+      ------
+       10011
+                        </code>
+                    </pre>
+                    <h3><span class="green">Answer</span>: 0011</h3>
+				</section>
+
+                <section>
+					<h2>Subtraction</h2>
+                    <h3>0111 - 1111 (Assume 4-bit computer)</h3>
+                    <pre class="fragment">
+                        <code>
+    1. Negate 1111 using 2C.
+        1111 -> 0000 -> 0001
+    2. Perform addition.
+        0111
+      + 0001
+      ------
+        1000
+                        </code>
+                    </pre>
+                    <h3><span class="green">Answer</span>: 1000</h3>
+				</section>
+
+                <section>
+					<h2>Overflow</h2>
+                    <p class="center"><span class="green">Operations in 2C</span>: Left-most carryout is not indicative of overflow!</p>
+                    <ul class="fragment">
+                        <li>If signs of addends are different, no overflow.</li>
+                        <li>If signs of addends are the same, the sum must have the same sign. Otherwise, an overflow occured.</li>
+                    </ul>
+				</section>
+
+                <section>
+					<h2>Multiplication</h2>
+                    <p class="center">Same method as in multiplication of decimal numbers</p>
+                    <pre>
+                        <code>
+            0010 (2)
+            0101 (5)
+         -------
+            0010
+          0010
+         -------
+         0001010 (10)
+                        </code>
+                    </pre>
+				</section>
+
+                <section>
+					<h2>Multiplication</h2>
+                    <p class="center">2C may yield incorrect product</p>
+                    <pre>
+                        <code>
+            0011 (3)
+            1011 (-5)
+         -------
+            0011
+           0011
+         0011
+         -------
+         0100001 (not -15!)
+                        </code>
+                    </pre>
+				</section>
+
+                <section>
+					<h2>Multiplication</h2>
+                    <p class="center">2C: <span class="green">Sign Extension</span></p>
+                    <pre>
+                        <code>
+            0000 0011 (3)
+            1111 1011 (-5)
+         ------------
+            0000 0011
+          0 0000 011
+        000 0001 1
+       0000 0011
+     0 0000 011
+    00 0000 11
+   000 0001 1
+   ------------------
+         10 1111 0001 (take the 8 least significant bits)
+                        </code>
+                    </pre>
+                    <h3><span class="green">Answer</span>1111 0001</h3>
+				</section>
 			</div>
 		</div>
 
