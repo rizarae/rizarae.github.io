@@ -157,6 +157,9 @@ strike * {
 	margin: 0;
 	padding: 0;
 }
+.reveal section img {
+    border: 0 !important;
+}
 .reveal pre {
 	box-shadow: none !important;
 	margin: 0 !important;
