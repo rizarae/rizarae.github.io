@@ -248,8 +248,8 @@
 
 				<section>
 					<h2><span class="green">Write </span>Policy</h2>
-                    <p class="center">Write Through</p>
-                    <p class="center">Write Back</p>
+                    <p class="center">Write <span class="green">Through</span></p>
+                    <p class="center">Write <span class="green">Back</span></p>
 				</section>
 
 			</div>
