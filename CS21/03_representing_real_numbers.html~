@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 21: Computer Organization and Assembly Language Programming</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>Representing Real Numbers</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>IEEE 754</li>
+                        <li>IEEE 754 Double Precision</li>
+                    </ol>
+				</section>
+
+				<section>
+					<h2><span class="green">Real</span> Numbers</h2>
+                    <p class="center">Many <span class="green">scientific coputation results</span> are real numbers</p>
+                    <h3 class="fragment">Integers simply <span class="green">inadequate</span>!</h3>
+				</section>
+
+				<section>
+					<h2>Radix <span class="green">Point</span></h2>
+                    <p class="center">key <span class="green">element</span> in representing real numbers</p>
+                    <h1>3029<span class="green"> . </span>66667</h1>
+				</section>
+
+				<section>
+					<h2>Decimal to <span class="green">Binary</span></h2>
+                    <p class="center">Convert the <span class="green">integral</span> part like before</p>
+                    <p class="center">Convert the <span class="green">fractional</span> part by</p>
+                    <ol>
+                        <li class="center">multiply fractional part by 2</li>
+                        <li class="center">integral part of the product is the binary bit</li>
+                        <li class="center">remove integral part, keep fractional part</li>
+                        <li class="center">repeat from step 1, until fractional part is zero, or desired accuracy is achieved</li>
+                    </ol>
+				</section>
+
+				<section>
+					<h2>Decimal to <span class="green">Binary</span></h2>
+                    <p>\(0.375_10\) = \(???_2\)</p>
+                    <pre>
+                        <code>
+    0.375 * 2 = 0.75    keep 0
+     0.75 * 2 = 1.5     keep 1.5
+      0.5 * 2 = 1.0     keep 1
+                        </code>
+                    </pre>
+                    <p class="center"><span class="green">Answer</span>: \(0.011_2\)</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Binary</span> to Decimal</h2>
+                    <p class="center">Convert the <span class="green">integral</span> part like before</p>
+                    <p class="center">Convert the <span class="green">fractional</span> part by multiplying to powers of 1/2</p>
+				</section>
+
+				<section>
+					<h2>Decimal to <span class="green">Binary</span></h2>
+                    <p>\(10.101_2\) = \(???_10\)</p>
+                    <pre>
+                        <code>
+    (1 * 2) + (0 * 1) + (1 * 1/2) + (0 * 1/4) + (1 * 1/8) = 2.625
+                        </code>
+                    </pre>
+				</section>
+
+				<section>
+					<h2>Representation</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Design</span> Issue</h2>
+                    <h3>Where to place the <span class="green">radix point</span></h3>
+                    <p class="fragment">One way is to place it permanently. This is called the <span class="green">FIXED-POINT</span> design.</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Design</span> Issue</h2>
+                    <h3>Fixed-Point</h3>
+                    <p class="center">Does that solution give us <span class="green">flexibility</span>?</p>
+                    <p class="center">Are our resources <span class="green">ALWAYS</span> well spent?</p>
+				</section>
+
+				<section>
+                    <h2>Fixed-Point</h2>
+                    <figure>
+                        <img src="/img/fixed.jpg" width=700 />
+                    </figure>
+				</section>
+
+				<section>
+					<h2>Solution: <span class="green">Floating Point</span></h2>
+                    <p class="center">make the radix point "float", move it around</p>
+                    <p class="center">inspired by the scientific notation</p>
+                    <h3>3.819 x \(10^85\)</h3>
+				</section>
+
+				<section>
+					<h2>IEEE <span class="green">754</span></h2>
+                    <p class="center">Defines how floating point numbers are represented</p>
+				</section>
+
+				<section>
+					<h2>Components</h2>
+                    <p class="center">Sign Bit</p>
+                    <p class="center">Exponent</p>
+                    <p class="center">Mantissa</p>
+				</section>
+
+				<section>
+					<h2>Sign Bit</h2>
+                    <p class="center">Left-most bit: bit 31</p>
+                    <p class="center">0 for positive, 1 for negative</p>
+				</section>
+
+				<section>
+					<h2>Exponent</h2>
+                    <p class="center">8 bits: bit 30 - bit 23</p>
+				</section>
+
+				<section>
+					<h2>Exponent <span class="green">Biasing</span></h2>
+                    <p class="center">Exponent bits that are all <span class="green">ALL ZEROES</span> and <span class="green">ALL ONES</span> reserved for <span class="green">SPECIAL</span> numbers</p>
+				</section>
+
+				<section>
+					<h2>Mantissa</h2>
+                    <p class="center">23 bits: bit 22 - bit 0</p>
+                    <p class="center">The actual number</p>
+                    <p class="center">23 bits to represent what is on the right of the radix point</p>
+				</section>
+
+				<section>
+                    <h2>IEEE 754</h2>
+                    <figure>
+                        <img src="/img/32.jpg" width=700 />
+                    </figure>
+				</section>
+
+				<section>
+					<h2><span class="green">Special</span> Exponents</h2>
+                    <p class="center">Exponent in IEEE 754 is biased. What is stored is actually the exponent plus 127</p>
+                    <p class="center">Biasing is done to allow easy magnitude commparison</p>
+				</section>
+
+				<section>
+                    <h2>IEEE 754</h2>
+                    <h3>Convert 81500000 (IEEE 754 hex) to decimal.</h3>
+                    <pre>
+                        <code>
+    Convert to binary: 1000 0001 0101 0000 0000 0000 0000 0000
+     Group components: 1 00000010 10100000000000000000000
+
+                 Sign: 1 (negative)
+             Exponent: 00000010 -> 2 - 127 = -125
+             Mantissa: 1.10100000000000000000000
+                        </code>
+                    </pre>
+                    <p class="center"><span class="green">Answer</span>: \(−1.101_2\) x \(2^{−125}\) or \(−1.625_{10}\) x \(2_{−125}\)</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Special</span> Numbers</h2>
+                    <p class="center">-inf</p>
+                    <p class="center">+inf</p>
+                    <p class="center">nan</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
