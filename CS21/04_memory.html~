@@ -171,6 +171,10 @@
                     <p class="center">In systems with cache, the processor could only access the cache and not the main memory</p>
 				</section>
 
+				<section>
+					<h2>Cache <span class="green">Operation</span></h2>
+				</section>
+
 			</div>
 		</div>
 
