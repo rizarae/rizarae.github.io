@@ -72,17 +72,17 @@
 					<h2>Decimal to <span class="green">Binary</span></h2>
                     <p class="center">Convert the <span class="green">integral</span> part like before</p>
                     <p class="center">Convert the <span class="green">fractional</span> part by</p>
-                    <ol>
-                        <li class="center">multiply fractional part by 2</li>
-                        <li class="center">integral part of the product is the binary bit</li>
-                        <li class="center">remove integral part, keep fractional part</li>
-                        <li class="center">repeat from step 1, until fractional part is zero, or desired accuracy is achieved</li>
+                    <ol class="center fragment">
+                        <li>multiply fractional part by 2</li>
+                        <li>integral part of the product is the binary bit</li>
+                        <li>remove integral part, keep fractional part</li>
+                        <li>repeat from step 1, until fractional part is zero, or desired accuracy is achieved</li>
                     </ol>
 				</section>
 
 				<section>
 					<h2>Decimal to <span class="green">Binary</span></h2>
-                    <p>\(0.375_10\) = \(???_2\)</p>
+                    <p class="center">\(0.375_10\) = \(???_2\)</p>
                     <pre>
                         <code>
     0.375 * 2 = 0.75    keep 0
@@ -101,10 +101,10 @@
 
 				<section>
 					<h2>Decimal to <span class="green">Binary</span></h2>
-                    <p>\(10.101_2\) = \(???_10\)</p>
+                    <p>\(10.101_2\) = \(???_{10}\)</p>
                     <pre>
                         <code>
-    (1 * 2) + (0 * 1) + (1 * 1/2) + (0 * 1/4) + (1 * 1/8) = 2.625
+(1 * 2) + (0 * 1) + (1 * 1/2) + (0 * 1/4) + (1 * 1/8) = 2.625
                         </code>
                     </pre>
 				</section>
@@ -116,7 +116,7 @@
 				<section>
 					<h2><span class="green">Design</span> Issue</h2>
                     <h3>Where to place the <span class="green">radix point</span></h3>
-                    <p class="fragment">One way is to place it permanently. This is called the <span class="green">FIXED-POINT</span> design.</p>
+                    <p class="fragment center">One way is to place it permanently. This is called the <span class="green">FIXED-POINT</span> design.</p>
 				</section>
 
 				<section>
@@ -137,7 +137,7 @@
 					<h2>Solution: <span class="green">Floating Point</span></h2>
                     <p class="center">make the radix point "float", move it around</p>
                     <p class="center">inspired by the scientific notation</p>
-                    <h3>3.819 x \(10^85\)</h3>
+                    <h3>3.819 x \(10^{85}\)</h3>
 				</section>
 
 				<section>
@@ -154,13 +154,13 @@
 
 				<section>
 					<h2>Sign Bit</h2>
-                    <p class="center">Left-most bit: bit 31</p>
-                    <p class="center">0 for positive, 1 for negative</p>
+                    <p class="center">Left-most bit: bit <span class="green">31</span></p>
+                    <p class="center"><span class="green">0</span> for positive, <span class="green">1</span> for negative</p>
 				</section>
 
 				<section>
 					<h2>Exponent</h2>
-                    <p class="center">8 bits: bit 30 - bit 23</p>
+                    <p class="center">8 bits: bit <span class="green">30</span> - bit <span class="green">23</span></p>
 				</section>
 
 				<section>
@@ -170,13 +170,13 @@
 
 				<section>
 					<h2>Mantissa</h2>
-                    <p class="center">23 bits: bit 22 - bit 0</p>
+                    <p class="center">23 bits: bit <span class="green">22</span> - bit <span class="green">0</span></p>
                     <p class="center">The actual number</p>
                     <p class="center">23 bits to represent what is on the right of the radix point</p>
 				</section>
 
 				<section>
-                    <h2>IEEE 754</h2>
+                    <h2>IEEE <span class="green">754</span></h2>
                     <figure>
                         <img src="/img/32.jpg" width=700 />
                     </figure>
@@ -185,7 +185,7 @@
 				<section>
 					<h2><span class="green">Special</span> Exponents</h2>
                     <p class="center">Exponent in IEEE 754 is biased. What is stored is actually the exponent plus 127</p>
-                    <p class="center">Biasing is done to allow easy magnitude commparison</p>
+                    <p class="center">Biasing is done to allow easy magnitude comparison</p>
 				</section>
 
 				<section>
@@ -201,13 +201,20 @@
              Mantissa: 1.10100000000000000000000
                         </code>
                     </pre>
-                    <p class="center"><span class="green">Answer</span>: \(−1.101_2\) x \(2^{−125}\) or \(−1.625_{10}\) x \(2_{−125}\)</p>
+                    <p class="center"><span class="green">Answer</span>: \(−1.101_2\) x \(2^{−125}\) or \(−1.625_{10}\) x \(2^{−125}\)</p>
 				</section>
 
 				<section>
 					<h2><span class="green">Special</span> Numbers</h2>
                     <p class="center">-inf</p>
                     <p class="center">+inf</p>
+                    <p class="center">nan</p>
+				</section>
+
+				<section>
+					<h2>IEEE 754 <span class="green">Double Precision</span></h2>
+                    <p class="center">Exponent width: <span class="green">11 bits</span></p>
+                    <p class="center">Mantissa precision: <span class="green">53</span> bits</p>
                     <p class="center">nan</p>
 				</section>
 
