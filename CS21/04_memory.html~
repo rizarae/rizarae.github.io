@@ -150,20 +150,20 @@
                     <p class="center">Memory <span class="green">closest</span> to the ALU</p>
                     <p class="center">Contained in the CPU</p>
                     <p class="center"><span class="green">Fastest</span> memory</p>
-                    <p class="center">Grouped into files</p>
+                    <p class="center">Grouped into <span class="green">files</span></p>
 				</section>
 
 				<section>
 					<h2>Registers</h2>
-                    <figure>
-                        <img src="/img/reglayout.jpg" width=700 />
+                    <figure class="center">
+                        <img src="/img/reglayout.jpg" width=500 />
                     </figure>
 				</section>
 
 				<section>
 					<h2>Cache</h2>
-                    <p class="center">Intermediary between registers and main memory</p>
-                    <p class="center">Provides both speed and size</p>
+                    <p class="center"><span class="green">Intermediary</span> between registers and main memory</p>
+                    <p class="center">Provides both <span class="green">speed</span> and <span class="green">size</span></p>
 				</section>
 
 				<section>
