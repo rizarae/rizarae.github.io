@@ -57,201 +57,43 @@
 				</section>
 
 				<section>
-					<h2>Memory</h2>
+					<h2><span class="green">Main</span> Memory</h2>
 				</section>
 
 				<section>
-					<h2>Memory</h2>
-                    <p class="center">In <span class="green">human terms</span>, it is the totality of what you remember</p>
+					<h2><span class="green">Main</span> Memory</h2>
+                    <ol>
+                        <li>Memory that is <span class="green">between</span> the <span class="green">cache</span> and the <span class="green">external</span> memory</li>
+                        <li><span class="green">Outside the CPU</span>, but still in the mainboard/motherboard</li>
+                        <li>Usually comes in <span class="green">modular packages</span></li>
+                        <li>Implemented using <span class="green">semiconductor</span> technology</li>
+                    </ol>
 				</section>
 
 				<section>
-					<h2>Memory</h2>
-                    <p class="center>In <span class="green">computers</span>, structure used to store instructions and data</p>
+					<h2><span class="green">Semiconductor</span> Memory</h2>
+                    <p class="center">RAM<br/>ROM<br/>EPROM<br/>Flash</p>
 				</section>
 
 				<section>
-					<h2>Memory</h2>
-                    <p class="center">Exhibits the widest range of type, technology, organization, performance and cost in any feature of a computer system</p>
+					<h2>RAM</h2>
+                    <h3>Random Access Memory</h3>
 				</section>
 
 				<section>
-					<h2>No memory = <span class="green">No computer</span>!</h2>
+					<h2>ROM</h2>
 				</section>
 
 				<section>
-					<h2>Computer Memory</h2>
-                    <h3>by <span class="green">Location</span></h3>
-                    <p class="center">CPU memory</p>
-                    <p class="center">Internal memory</p>
-                    <p class="center">External memory</p>
+					<h2>EPROM</h2>
 				</section>
 
 				<section>
-					<h2>Memory <span class="green">Hierarchy</span></h2>
+					<h2>Flash</h2>
 				</section>
 
 				<section>
-					<h2><span class="green">Characteristics</span> of Memory</h2>
-                    <p class="center">Cost</p>
-                    <p class="center">Capacity</p>
-                    <p class="center">Access Time</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Characteristics</span> of Memory</h2>
-                    <p class="center">Faster access time, higher cost</p>
-                    <p class="center">Greater capacity, slower access time</p>
-				</section>
-
-				<section>
-					<h2>Memory <span class="green">Hierarchy</span></h2>
-                    <figure>
-                        <img src="/img/hierarchy.png" width=700 />
-                    </figure>
-				</section>
-
-				<section>
-					<h2>Memory <span class="green">Hierarchy</span></h2>
-                    <p class="center">A memory hierarchy uses <span class="green">several types</span> of memory</p>
-                    <p class="center">The amount of memory type is <span class="green">inversely proportional</span> to its cost</p>
-                    <p class="center">Very few of fast, expensive memory types and lots of slow, cheap memory types</p>
-				</section>
-
-				<section>
-					<h2>Memory <span class="green">Hierarchy</span></h2>
-                    <p class="center">The hierarchy is <span class="green">invisible</span> to the user</p>
-                    <p class="center fragment">Except the <span class="green">registers</span> when programming in <span class="green">assembly</span></p>
-				</section>
-
-				<section>
-					<h2>Memory <span class="green">Hierarchy</span></h2>
-                    <p class="center">A higher level only contains a <span class="green">copy of the subset</span> of the memory below it</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Spatial</span> Locality</h2>
-                    <p class="center">Tendency of programs to <span class="green">access items</span> from memory that are <span class="green">near each other</span></p>
-				</section>
-
-				<section>
-					<h2><span class="green">Temporal</span> Locality</h2>
-                    <p class="center">Tendency of programs to <span class="green">access items</span> from memory <span class="green">repeatedly</span></p>
-				</section>
-
-				<section>
-					<h2>Registers</h2>
-				</section>
-
-				<section>
-					<h2>Registers</h2>
-                    <p class="center">Memory <span class="green">closest</span> to the ALU</p>
-                    <p class="center">Contained in the CPU</p>
-                    <p class="center"><span class="green">Fastest</span> memory</p>
-                    <p class="center">Grouped into <span class="green">files</span></p>
-				</section>
-
-				<section>
-					<h2>Registers</h2>
-                    <figure class="center">
-                        <img src="/img/reglayout.jpg" width=500 />
-                    </figure>
-				</section>
-
-				<section>
-					<h2>Cache</h2>
-				</section>
-
-				<section>
-					<h2>Cache</h2>
-                    <p class="center"><span class="green">Intermediary</span> between registers and main memory</p>
-                    <p class="center">Provides both <span class="green">speed</span> and <span class="green">size</span></p>
-				</section>
-
-				<section>
-					<h2>Cache</h2>
-                    <p class="center">In systems with cache, the processor <span class="green">could only access the cache</span> and not the main memory</p>
-				</section>
-
-				<section>
-					<h2>Cache <span class="green">Operation</span></h2>
-				</section>
-
-				<section>
-					<h2>Cache <span class="green">Performance</span></h2>
-                    <p class="center"><span class="green">Hit</span> - access an item found in the cache</p>
-                    <p class="center"><span class="green">Miss</span> - access an item NOT found in the cache</p>
-				</section>
-
-				<section>
-					<h2>Cache <span class="green">Performance</span></h2>
-                    <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. What is the <span class="green">hit rate</span>? <span class="green">Miss rate</span>?</p>
-				</section>
-
-				<section>
-					<h2>Cache <span class="green">Performance</span></h2>
-                    <p class="center"><span class="green">Hit Time</span> - time needed to access data FOUND in the cache</p>
-                    <p class="center"><span class="green">Miss Penalty</span> - time needed to transfer data from main memory to cache</p>
-				</section>
-
-				<section>
-					<h2>Cache <span class="green">Performance</span></h2>
-                    <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. Assuming that the <span class="green">hit time</span> is <span class="green">2ns</span>, and the <span class="green">miss penalty</span> is <span class="green">7ns</span>, what is the <span class="green">total time</span> spent for memory access?</p>
-				</section>
-
-				<section>
-					<h2>Elements of <span class="green">Cache Design</span></h2>
-                    <p class="center">Cache Size</p>
-                    <p class="center">Mapping Function</p>
-                    <p class="center">Replacement Algorithm</p>
-                    <p class="center">Write Policy</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Cache </span>Size</h2>
-                    <p class="center"><span class="green">Big enough</span> that we don’t waste time accessing main memory</p>
-                    <p class="center"><span class="green">Small enough</span> that it is still <span class="green">fast</span> and <span class="green">cheap</span></p>
-				</section>
-
-				<section>
-					<h2><span class="green">Mapping </span>Function</h2>
-                    <p class="center">Policy on where <span class="green">data</span> from the main memory would <span class="green">reside on the cache</span></p>
-				</section>
-
-				<section>
-					<h2><span class="green">Mapping </span>Function</h2>
-                    <p class="center">Direct Mapping</p>
-                    <p class="center">Fully Associative Mapping</p>
-                    <p class="center">Set Associative Mapping</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Direct </span>Mapping</h2>
-                    <p class="center">Each memory location is mapped to exactly ONE location in the cache</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Fully-Associative </span>Mapping</h2>
-                    <p class="center">A memory location could go to any cache location</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Set-Associative </span>Mapping</h2>
-                    <p class="center">Hybrid between Direct Mapping and Fully-Associative Mapping</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Replacement </span>Algorithms</h2>
-                    <p class="center">FIFO</p>
-                    <p class="center">LRU</p>
-                    <p class="center">LFU</p>
-                    <p class="center">Random</p>
-				</section>
-
-				<section>
-					<h2><span class="green">Write </span>Policy</h2>
-                    <p class="center">Write <span class="green">Through</span></p>
-                    <p class="center">Write <span class="green">Back</span></p>
+					<h2><span class="green">External</span> Memory</h2>
 				</section>
 
 			</div>
