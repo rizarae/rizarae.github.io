@@ -159,6 +159,7 @@ strike * {
 }
 .reveal section img {
     border: 0 !important;
+    box-shadow: none;
 }
 .reveal pre {
 	box-shadow: none !important;
