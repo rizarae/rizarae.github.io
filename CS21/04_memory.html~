@@ -147,9 +147,9 @@
 
 				<section>
 					<h2>Registers</h2>
-                    <p class="center">Memory closest to the ALU</p>
+                    <p class="center">Memory <span class="green">closest</span> to the ALU</p>
                     <p class="center">Contained in the CPU</p>
-                    <p class="center">Fastest memory</p>
+                    <p class="center"><span class="green">Fastest</span> memory</p>
                     <p class="center">Grouped into files</p>
 				</section>
 
@@ -194,7 +194,7 @@
 
 				<section>
 					<h2>Cache <span class="green">Performance</span></h2>
-                    <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. Assuming that the <span class="green">hit time</span> is <span class="green">2ns</span>, and the miss penalty is 7ns, what is the <span class="green">total time</span> spent for memory access?</p>
+                    <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. Assuming that the <span class="green">hit time</span> is <span class="green">2ns</span>, and the <span class="green">miss penalty</span> is <span class="green">7ns</span>, what is the <span class="green">total time</span> spent for memory access?</p>
 				</section>
 
 			</div>
