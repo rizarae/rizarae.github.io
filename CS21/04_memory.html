@@ -197,6 +197,61 @@
                     <p class="center">A certain <span class="green">program</span> has <span class="green">100 memory accesses</span>(all reads), of which <span class="green">82</span> are found in the cache. Assuming that the <span class="green">hit time</span> is <span class="green">2ns</span>, and the <span class="green">miss penalty</span> is <span class="green">7ns</span>, what is the <span class="green">total time</span> spent for memory access?</p>
 				</section>
 
+				<section>
+					<h2>Elements of <span class="green">Cache Design</span></h2>
+                    <p class="center">Cache Size</p>
+                    <p class="center">Mapping Function</p>
+                    <p class="center">Replacement Algorithm</p>
+                    <p class="center">Write Policy</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Cache </span>Size</h2>
+                    <p class="center"><span class="green">Big enough</span> that we don’t waste time accessing main memory</p>
+                    <p class="center"><span class="green">Small enough</span> that it is still <span class="green">fast</span> and <span class="green">cheap</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Mapping </span>Function</h2>
+                    <p class="center">Policy on where <span class="green">data</span> from the main memory would <span class="green">reside on the cache</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Mapping </span>Function</h2>
+                    <p class="center">Direct Mapping</p>
+                    <p class="center">Fully Associative Mapping</p>
+                    <p class="center">Set Associative Mapping</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Direct </span>Mapping</h2>
+                    <p class="center">Each memory location is mapped to exactly ONE location in the cache</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Fully-Associative </span>Mapping</h2>
+                    <p class="center">A memory location could go to any cache location</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Set-Associative </span>Mapping</h2>
+                    <p class="center">Hybrid between Direct Mapping and Fully-Associative Mapping</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Replacement </span>Algorithms</h2>
+                    <p class="center">FIFO</p>
+                    <p class="center">LRU</p>
+                    <p class="center">LFU</p>
+                    <p class="center">Random</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Write </span>Policy</h2>
+                    <p class="center">Write <span class="green">Through</span></p>
+                    <p class="center">Write <span class="green">Back</span></p>
+				</section>
+
 			</div>
 		</div>
 
