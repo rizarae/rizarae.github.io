@@ -183,16 +183,21 @@
                     <p class="center">2C: <span class="green">Sign Extension</span></p>
                     <pre>
                         <code>
-            0011 (3)
-            1011 (-5)
-         -------
-            0011
-           0011
-         0011
-         -------
-         0100001 (not -15!)
+            0000 0011 (3)
+            1111 1011 (-5)
+         ------------
+            0000 0011
+          0 0000 011
+        000 0001 1
+       0000 0011
+     0 0000 011
+    00 0000 11
+   000 0001 1
+   ------------------
+         10 1111 0001 (take the 8 least significant bits)
                         </code>
                     </pre>
+                    <h3><span class="green">Answer</span>: 1111 0001</h3>
 				</section>
 			</div>
 		</div>
