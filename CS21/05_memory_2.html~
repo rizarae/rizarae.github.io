@@ -124,8 +124,8 @@
 				<section>
 					<h2>EPROM</h2>
                     <h3>Erasable Programmable Read-Only Memory</h3>
-                    <figure>
-                        <img src="/img/EPROM.jpg" width=700 />
+                    <figure class="center">
+                        <img src="/img/EPROM.jpg" />
                     </figure>
 				</section>
 
@@ -171,7 +171,8 @@
 				</section>
 
 				<section>
-					<h2></h2>
+					<h2><span class="green">External</span> Memory</h2>
+                    <h3>Magnetic Disks</h3>
                     <figure>
                         <img src="/img/spindle.jpg" width=700 />
                     </figure>
