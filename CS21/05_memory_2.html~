@@ -104,7 +104,7 @@
 				</section>
 
 				<section>
-					<h2>RAM</h2>
+					<h2>ROM</h2>
                     <h3>Read-Only Memory</h3>
                     <figure>
                         <img src="/img/rom.jpg" width=700 />
@@ -131,7 +131,6 @@
 
 				<section>
 					<h2>Flash</h2>
-
                     <ul class="center">
                         <li>read-write type</li>
                         <li>non-volatile</li>
@@ -141,7 +140,41 @@
 				</section>
 
 				<section>
+					<h2>Flash</h2>
+                    <figure>
+                        <img src="/img/flash.jpg" width=700 />
+                    </figure>
+				</section>
+
+				<section>
 					<h2><span class="green">External</span> Memory</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">External</span> Memory</h2>
+                    <ul>
+                        <li><span class="green">Lowest</span> in the memory hierarchy</li>
+                        <li><span class="green">Largest</span> in capacity, <span class="green">slowest</span> in speed</li>
+                        <li>Most common are magnetic and optical disks</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2><span class="green">External</span> Memory</h2>
+                    <h3>Magnetic Disks</h3>
+                    <ul>
+                        <li>Commonly known as <span class="green">Hard Disk Drives</span></li>
+                        <li>Data is stored in <span class="green">platters</span> attached to a central <span class="green">spindle</span></li>
+                        <li>Platters are <span class="green">coated with magnetizable material</span></li>
+                        <li>Heads read/write data on/to the platter</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2></h2>
+                    <figure>
+                        <img src="/img/spindle.jpg" width=700 />
+                    </figure>
 				</section>
 
 			</div>
