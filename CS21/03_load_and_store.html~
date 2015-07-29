@@ -201,9 +201,8 @@
 				<section>
 					<h2><span class="green">Store</span> Operations</h2>
                     <p class="center">Reverse of load operation</p>
-				</section>
-
-				
+                    <p class="center">Transfers data from a register to a memory location</p>
+				</section>				
 			</div>
 		</div>
 
