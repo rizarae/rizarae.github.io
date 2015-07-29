@@ -78,18 +78,66 @@
 				<section>
 					<h2>RAM</h2>
                     <h3>Random Access Memory</h3>
+                    <p class="center">the choice for <span class="green">main memory</span> in computers</p>
+                    <ul class="center">
+                        <li>read-write type</li>
+                        <li>volatile</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2>RAM</h2>
+                    <h3>Random Access Memory</h3>
+                    <figure>
+                        <img src="/img/ram.jpg" width=700 />
+                        <figcaption>Main Memory: An example of RAM (Source: <i>http://hqtiger.mobi/wp-content/uploads/ram-images-2.jpg</i>)</figcaption>
+                    </figure>
 				</section>
 
 				<section>
 					<h2>ROM</h2>
+                    <h3>Read-Only Memory</h3>
+                    <ul class="center">
+                        <li>non-volatile</li>
+                        <li>randomly accessible</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2>RAM</h2>
+                    <h3>Read-Only Memory</h3>
+                    <figure>
+                        <img src="/img/rom.jpg" width=700 />
+                    </figure>
 				</section>
 
 				<section>
 					<h2>EPROM</h2>
+                    <h3>Erasable Programmable Read-Only Memory</h3>
+                    <ul class="center">
+                        <li>read-write type</li>
+                        <li>non-volatile</li>
+                        <li>randomly accessible</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2>EPROM</h2>
+                    <h3>Erasable Programmable Read-Only Memory</h3>
+                    <figure>
+                        <img src="/img/EPROM.jpg" width=700 />
+                    </figure>
 				</section>
 
 				<section>
 					<h2>Flash</h2>
+
+                    <ul class="center">
+                        <li>read-write type</li>
+                        <li>non-volatile</li>
+                        <li>randomly accessible</li>
+                        <li>usually uses USB interface</li>
+                    </ul>
 				</section>
 
 				<section>
