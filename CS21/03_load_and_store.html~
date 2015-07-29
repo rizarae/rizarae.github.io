@@ -42,59 +42,37 @@
 			<div class="slides">
 				<section>
 					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
-					<h3>File Repository</h3>
+					<h3>Load and Store Operations</h3>
 					<p class="center">
 						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
 					</p>
 				</section>
 
 				<section>
-					<h2>Syllabus</h2>
+					<h2>Outline</h2>
                     <ol>
-                        <li><a class="green" href="syllabus.pdf">Course Syllabus</a></li>
+                        <li>Data Section</li>
+                        <li>Load Operations</li>
+                        <li>Store Operations</li>
                     </ol>
 				</section>
 
 				<section>
-					<h2>Computer Organization Lecture Slides</h2>
-                    <ol>
-                        <li><a class="green" href="00_course_intro.html">Course Introduction</a></li>
-                        <li><a class="green" href="01_computer_organization.html">Computer Organization and Number Systems</a></li>
-                        <!--<li><a class="green" href="02_computer_arithmetic.html">Computer Arithmetic</a></li>-->
-                        <!--<li><a class="green" href="03_representing_real_numbers.html">Representing Real Numbers</a></li>-->
-                        <!--<li><a class="green" href="04_memory.html">Memory: Registers and Cache</a></li>-->
-                        <!--<li><a class="green" href="05_memory_2.html">Memory: Main and External Memories</a></li>-->
-                        <!--<li><a class="green" href="06_interfaces_and_io.html">Interfaces and I/O Devices</a></li>-->
-                    </ol>
+					<h2><span class="green">Data</span> Section</h2>
 				</section>
 
-				<section>
-					<h2>Assembly Language Programming Lecture Slides</h2>
-                    <ol>
-                        <li><a class="green" href="01_intro_to_assembly.html">Introduction to Assembly Language Programming</a></li>
-                        <!--<li><a class="green" href="02_registers.html">Register-Register Operations</a></li>-->
-                        <!--<li><a class="green" href="03_load_and_store.html">Load and Store Operations</a></li>-->
-                    </ol>
-				</section>
-
-				<!--<section>
-					<h2>Electronics Lecture Slides</h2>
-                    <ol>
-                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
-                    </ol>
-				</section>-->
-
-				<!--<section>
-					<h2>Microcontroller Programming Lecture Slides</h2>
-                    <ol>
-                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
-                    </ol>
-				</section>-->
+				
 			</div>
 		</div>
 
 		<script src="/lib/js/head.min.js"></script>
 		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 		<script>
 
