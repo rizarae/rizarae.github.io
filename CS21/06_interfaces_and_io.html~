@@ -52,9 +52,8 @@
 					<h2>Outline</h2>
                     <ol>
                         <li>Buses</li>
-                        <li>I/O Interface</li>
-                        <li>Polling and Interrupt</li>
                         <li>I/O Standards</li>
+                        <li>Polling and Interrupt</li>
                     </ol>
 				</section>
 			</div>
