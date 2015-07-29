@@ -62,7 +62,108 @@
 				</section>
 
 				<section>
+					<h2><span class="green">Data</span> Section</h2>
+                    <p class="center">Designated by the <span class="green">.data</span> section of the source code<p>
+                    <p class="center">Enables us to <span class="green">save values</span> in the memory of the system<p>
+                    <pre>
+                        <code>
+    .text
+    
+    .data
+    data1:  .byte 0
+                        </code>
+                    </pre>
+				</section>
+
+				<section>
 					<h2><span class="green">Load</span> Operations</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operations</h2>
+                    <p class="center"><span class="green">Transfers</span> data from a memory location to a register</p>
+                    <p class="center">Usually involve <span class="green">two registers</span>: first, the register containing the address of the data to be loaded, second, the register that would receive the data</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    .text
+    main:   la      $t1,    x
+            lw      $t2,    ($t1)
+    
+    .data
+    x:  .byte 8
+                        </code>
+                    </pre>
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operations</h2>
+                    <h3>Byte Addressability</h3>
+                    <p class="center">MIPS is a 32-bit processor - a word in MIPS is equal to 32 bits</p>
+                    <p class="center">The smallest unit of data that we could address and access is 1 byte/8 bits</p>
+                    <p class="center">load halfword: <span class="green">lh</span></p>
+                    <p class="center">load byte: <span class="green">lb</span></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    lw      $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lw.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    lbu      $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lb.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    addiu   $t1,    $t1,    1
+    lbu     $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lb1.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    addiu   $t1,    $t1,    2
+    lbu     $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lb2.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    addiu   $t1,    $t1,    3
+    lbu     $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lb3.jpeg" width=500 />
 				</section>
 
 				<section>
