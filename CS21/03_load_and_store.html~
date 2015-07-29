@@ -143,7 +143,64 @@
 				</section>
 
 				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    addiu   $t1,    $t1,    2
+    lbu     $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lb2.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <pre>
+                        <code>
+    la      $t1,    x
+    addiu   $t1,    $t1,    3
+    lbu     $t2,    ($t1)
+                        </code>
+                    </pre>
+                    <img class="center" src="/img/lb3.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operations</h2>
+                    <h3>Signed vs Unsigned</h3>
+                    <p class="center"><span class="center">Unsigned</span>: for characters</p>
+                    <p class="center"><span class="center">Signed</span>: for numbers</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operations</h2>
+                    <h3>Signed vs Unsigned</h3>
+                    <p class="center"><span class="center">Unsigned</span>: fill the rest of the register with <span class="green">0</span>s</p>
+                    <p class="center"><span class="center">Signed</span>: fill the rest of the register with the <span class="green">value of the leftmost bit</span> of the byte/halfword being loaded</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <h3>Signed vs Unsigned</h3>
+                    <img class="center" src="/img/sign1.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <h3>Signed vs Unsigned</h3>
+                    <img class="center" src="/img/sign2.jpeg" width=500 />
+				</section>
+
+				<section>
+					<h2><span class="green">Load</span> Operation</h2>
+                    <h3>Signed vs Unsigned</h3>
+                    <img class="center" src="/img/sign3.jpeg" width=500 />
+				</section>
+
+				<section>
 					<h2><span class="green">Store</span> Operations</h2>
+                    <p class="center">Reverse of load operation</p>
 				</section>
 
 				
