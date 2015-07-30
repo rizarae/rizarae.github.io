@@ -77,13 +77,14 @@
                         <!--<li><a class="green" href="04_bit_operations.html">Bit Operations</a></li>-->
                         <!--<li><a class="green" href="05_conditionals_and_loops.html">Conditional and Loops</a></li>-->
                         <!--<li><a class="green" href="06_functions.html">Functions</a></li>-->
+                        <!--<li><a class="green" href="07_floating_point.html">Floating Point in Assembly</a></li>-->
                     </ol>
 				</section>
 
 				<!--<section>
 					<h2>Electronics Lecture Slides</h2>
                     <ol>
-                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
+                        <li><a href="01_laws_of_electricity.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
                     </ol>
 				</section>-->
 

@@ -51,9 +51,89 @@
 				<section>
 					<h2>Outline</h2>
                     <ol>
+                        <li>Masking</li>
+                        <li>Shift and Rotate</li>
                     </ol>
 				</section>
 
+				<section>
+					<h2>Masking</h2>
+                    <p class="center"><span class="green">Manipulation</span> of selected areas of a word</p>
+                    <p class="center">Two components: logic operation, bitmask pattern</p>
+				</section>
+
+				<section>
+					<h2>Masking <span class="green">Capabilities</span></h2>
+                    <p class="center">Make some segments <span class="green">all zeroes</span>("erase")</p>
+                    <p class="center">Make some segments <span class="green">all ones</span></p>
+                    <p class="center">Get the <span class="green">complement</span> of just a selected segment</p>
+				</section>
+
+				<section>
+					<h2>Masking: <span class="green">Example</span></h2>
+                    <p class="center">Given the bit sequence <span class="green">0000 1010 1111 0101</span>, erase the first and third nibbles.</p>
+                    <p class="center"><span class="green">0000 0000 1111 0000</span></p>
+				</section>
+
+				<section>
+					<h2>Masking: <span class="green">Example</span></h2>
+                    <p class="center">Solution</p>
+                    <p class="center">Choose the <span class="green">logic</span> operation</p>
+                    <p class="center">Create the <span class="green">bitmask</span></p>
+				</section>
+
+				<section>
+					<h2>Masking: <span class="green">Example</span></h2>
+                    <p class="center">Solution: <span class="green">Choosing the Logic Operation</span></p>
+                    <p class="center">What logic operation is good for erasing and forcing bits to zero?</p>
+                    <p class="center fragment">Determining the operation is not enough. We still need an operand (bitmask)!</p>
+				</section>
+
+				<section>
+					<h2>Masking: <span class="green">Example</span></h2>
+                    <p class="center">Solution: <span class="green">Creating the Bitmask</span></p>
+                    <p class="center">Defines the areas-of-application</p>
+                    <p class="center fragment">Controls which parts of the bit sequence are affected by the operation</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Shift</span> and Rotate</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Shift</span> Operation</h2>
+                    <p clas="center">Moves the bits to the left or to the right</p>
+                    <p clas="center">Bits that "fall off" the edge disappear</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Shift</span> Operation</h2>
+                    <h3>Shift-right <span class="green">1111 0000 1111 0000</span> by 1</h3>
+                    <p class="center fragment">0111 1000 0111 1000</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Shift</span> Operation</h2>
+                    <h3>Logical Shift</h3>
+                    <p class="center">Spaces left by shifting to the right immediately filled with zeroes</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Shift</span> Operation</h2>
+                    <h3>Arithmetic Shift</h3>
+                    <p class="center">Spaces left by shifting to the right filled with the value of the rightmost bit</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Rotate</span> Operation</h2>
+                    <p class="center">Just like <span class="green">shift</span>, bits that originally <span class="green">fall off</span> appear on the other end</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Rotate</span> Operation</h2>
+                    <h3>Rotate-right <span class="green">0000 0000 0000 0011</span> by 1</h3>
+                    <p class="center">1000 0000 0000 0001</p>
+				</section>
 				
 			</div>
 		</div>
