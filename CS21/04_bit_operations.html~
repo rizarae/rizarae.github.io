@@ -85,7 +85,7 @@
 				<section>
 					<h2>Masking: <span class="green">Example</span></h2>
                     <p class="center">Solution: <span class="green">Choosing the Logic Operation</span></p>
-                    <p class="center">What logic operation is good for erasing and forcing bits to zero?</p>
+                    <p class="center">What logic operation is good for erasing and forcing bits to zero? <span class="fragment green">AND</span></p>
                     <p class="center fragment">Determining the operation is not enough. We still need an operand (bitmask)!</p>
 				</section>
 
@@ -93,7 +93,7 @@
 					<h2>Masking: <span class="green">Example</span></h2>
                     <p class="center">Solution: <span class="green">Creating the Bitmask</span></p>
                     <p class="center">Defines the areas-of-application</p>
-                    <p class="center fragment">Controls which parts of the bit sequence are affected by the opration</p>
+                    <p class="center fragment">Controls which parts of the bit sequence are affected by the operation</p>
 				</section>
 
 				<section>
@@ -102,13 +102,13 @@
 
 				<section>
 					<h2><span class="green">Shift</span> Operation</h2>
-                    <p clas="center">Moves the bits to the left or to the right</p>
-                    <p clas="center">Bits that "fall off" the edge disappear</p>
+                    <p class="center">Moves the bits to the left or to the right</p>
+                    <p class="center">Bits that "fall off" the edge disappear</p>
 				</section>
 
 				<section>
 					<h2><span class="green">Shift</span> Operation</h2>
-                    <h3>Shift-right <span class="green">1111 0000 1111 0000</span> by 1</h3>
+                    <p class="center">Shift-right <span class="green">1111 0000 1111 0000</span> by 1</p>
                     <p class="center fragment">0111 1000 0111 1000</p>
 				</section>
 
@@ -131,7 +131,7 @@
 
 				<section>
 					<h2><span class="green">Rotate</span> Operation</h2>
-                    <h3>Rotate-right <span class="green">0000 0000 0000 0011</span> by 1</h3>
+                    <p class="center">Rotate-right <span class="green">0000 0000 0000 0011</span> by 1</h3>
                     <p class="center">1000 0000 0000 0001</p>
 				</section>
 				
