@@ -7,7 +7,6 @@
 		<title>CS 21: Computer Organization and Assembly Language Programming</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -335,7 +334,7 @@
                 <section>
 					<h2>Fourth Generation</h2>
                     <figure>
-                        <img width=700 src="/img/ic.jpg" />
+                        <img width=700 src="/img/ibmpc.jpg" />
                         <figcaption class="center">An IBM PC. (http://www.oldcomputers.net/pics/ibm5150.jpg)</i></figcaption>
                     </figure>
 				</section>
@@ -351,14 +350,6 @@
                 <section>
 					<h2>Fifth Generation</h2>
                     <h3><span class="green">Smart</span> Computers</h3>
-				</section>
-
-                <section>
-					<h2>Fifth Generation</h2>
-                    <figure>
-                        <img width=700 src="/img/ic.jpg" />
-                        <figcaption class="center">An IBM PC. (http://www.oldcomputers.net/pics/ibm5150.jpg)</i></figcaption>
-                    </figure>
 				</section>
 
                 <section>
