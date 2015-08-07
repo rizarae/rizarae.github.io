@@ -63,6 +63,14 @@
 				</section>
 
                 <section>
+					<h2><span class="green">Computer</span> System</h2>
+                    <figure>
+                        <img class="center" src="/img/computersystem.jpg" width=500 />
+                        <figcaption class="center">A typical computer system. (Source: <i>http://research.microsoft.com/en-us/um/people/gbell/computer_structures__readings_and_examples/GR000101.JPG</i>)</figcaption>
+                    </figure>
+				</section>
+
+                <section>
 					<h2><span class="green">Assembly</span> Language</h2>
 				</section>
 
@@ -91,6 +99,11 @@
 
                 <section>
 					<h2><span class="green">Hierarchy </span>of Programming Languages</h2>
+					<div class="row">
+						<div class="tile tile-12"><p>HIGH-LEVEL LANGUAGE</p></div>
+						<div class="tile tile-12"><p>ASSEMBLY LANGUAGE</p></div>
+						<div class="tile tile-12"><p>MACHINE LANGUAGE</p></div>
+					</div>
 				</section>
 
                 <section>
@@ -158,6 +171,10 @@
 
                 <section>
     				<h2>Where is MIPS <span class="green">used</span>?</h2>
+                    <figure class="center">
+                        <img src="/img/psp.jpg" width=500 />
+                        <figcaption>Source: <i>http://digthatbox.com/sitebuildercontent/sitebuilderpictures/PSP_E_1000.jpg</i></figcaption>
+                    </figure>
 				</section>
 
                 <section>
@@ -167,6 +184,11 @@
                         <li>memory units internal to the processor</li>
                         <li>discrete and named</li>
                     </ul>
+				</section>
+
+                <section>
+    				<h2><span class="green">Load Immediate</span> Instruction</h2>
+                    <p class="center">Instruction that tells the processor to load a <span class="green">specific value</span> to a <span class="green">specific register</span></p>
 				</section>
 
 			</div>

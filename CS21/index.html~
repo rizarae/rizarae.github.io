@@ -71,7 +71,10 @@
 				<section>
 					<h2>Assembly Language Programming Lecture Slides</h2>
                     <ol>
-                        <li><a class="green" href="01_intro_to_assembly.html">Introduction to Assembly Language Programming</a></li>
+                        <li>
+                            <a class="green" href="01_intro_to_assembly.html">Introduction to Assembly Language Programming</a><br/>
+                            <a class="green" href="laboratory1 - manual.pdf">Laboratory 1 Manual</a><br/>
+                        </li>
                         <!--<li><a class="green" href="02_registers.html">Register-Register Operations</a></li>-->
                         <!--<li><a class="green" href="03_load_and_store.html">Load and Store Operations</a></li>-->
                         <!--<li><a class="green" href="04_bit_operations.html">Bit Operations</a></li>-->
@@ -84,7 +87,7 @@
 				<!--<section>
 					<h2>Electronics Lecture Slides</h2>
                     <ol>
-                        <li><a href="01_laws_of_electricity.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
+                        <li><a class="green" href="01_laws_of_electricity.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
                     </ol>
 				</section>-->
 
