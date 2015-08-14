@@ -210,6 +210,10 @@
 
 				<section>
 					<h2><span class="green">Register-Register</span> Operation Instructions</h2>
+                </section>
+
+				<section>
+					<h2><span class="green">Register-Register</span> Operation Instructions</h2>
                     <p class="center">Instructions that do operations between values that come from <span class="green">two registers</span></p>
                     <p class="center"><span class="green">Two</span> operand registers, <span class="green">one</span> result registers</p>
                 </section>
