@@ -164,7 +164,7 @@
 					<h2>SPIM/MARS <span class="green">Syscalls</span></h2>
                     <h3>Steps in using syscalls</h3>
                     <ol>
-                        <li>Use the <span class="green">load immediate</li> instruction (li) to load the desired <span class="green">syscall number</span> into register <span class="green">v0</span></li>
+                        <li>Use the <span class="green">load immediate</span> instruction (li) to load the desired <span class="green">syscall number</span> into register <span class="green">v0</span></li>
                         <li><span class="green">Prepare arguments</span>, if applicable</li>
                         <li>Issue the <span class="green">syscall</span> instruction</li>
                     </ol>
