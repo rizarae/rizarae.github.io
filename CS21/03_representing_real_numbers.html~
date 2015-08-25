@@ -7,7 +7,6 @@
 		<title>CS 21: Computer Organization and Assembly Language Programming</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -86,7 +85,7 @@
                     <pre>
                         <code>
     0.375 * 2 = 0.75    keep 0
-     0.75 * 2 = 1.5     keep 1.5
+     0.75 * 2 = 1.5     keep 1
       0.5 * 2 = 1.0     keep 1
                         </code>
                     </pre>
@@ -101,7 +100,7 @@
 
 				<section>
 					<h2>Decimal to <span class="green">Binary</span></h2>
-                    <p>\(10.101_2\) = \(???_{10}\)</p>
+                    <p class="center">\(10.101_2\) = \(???_{10}\)</p>
                     <pre>
                         <code>
 (1 * 2) + (0 * 1) + (1 * 1/2) + (0 * 1/4) + (1 * 1/8) = 2.625
@@ -206,15 +205,13 @@
 
 				<section>
 					<h2><span class="green">Special</span> Numbers</h2>
-                    <p class="center">-inf</p>
-                    <p class="center">+inf</p>
-                    <p class="center">nan</p>
+                    <p class="center">-inf, +inf, nan</p>
 				</section>
 
 				<section>
 					<h2>IEEE 754 <span class="green">Double Precision</span></h2>
-                    <p class="center">Exponent width: <span class="green">11 bits</span></p>
-                    <p class="center">Mantissa precision: <span class="green">53</span> bits</p>
+                    <p class="center">Exponent width: <span class="green">11</span> bits <br/> 
+                    Mantissa precision: <span class="green">53</span> bits</p>
 				</section>
 
 			</div>
