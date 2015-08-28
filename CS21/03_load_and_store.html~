@@ -110,60 +110,37 @@
 
 				<section>
 					<h2><span class="green">Load</span> Operation</h2>
-                    <pre>
-                        <code>
-    la      $t1,    x
-    lw      $t2,    ($t1)
-                        </code>
-                    </pre>
-                    <img class="center" src="/img/lw.jpeg" width=500 />
+                    <figure class="center">
+                        <img class="center" src="/img/lw.jpeg" width=500 />
+                    </figure>
 				</section>
 
 				<section>
 					<h2><span class="green">Load</span> Operation</h2>
-                    <pre>
-                        <code>
-    la      $t1,    x
-    lbu      $t2,    ($t1)
-                        </code>
-                    </pre>
-                    <img class="center" src="/img/lb.jpeg" width=500 />
+                    <figure class="center">
+                        <img class="center" src="/img/lb.jpeg" width=500 />
+                    </figure>
 				</section>
 
 				<section>
 					<h2><span class="green">Load</span> Operation</h2>
-                    <pre>
-                        <code>
-    la      $t1,    x
-    addiu   $t1,    $t1,    1
-    lbu     $t2,    ($t1)
-                        </code>
-                    </pre>
-                    <img class="center" src="/img/lb1.jpeg" width=500 />
+                    <figure class="center">
+                        <img class="center" src="/img/lb1.jpeg" width=500 />
+                    </figure>
 				</section>
 
 				<section>
 					<h2><span class="green">Load</span> Operation</h2>
-                    <pre>
-                        <code>
-    la      $t1,    x
-    addiu   $t1,    $t1,    2
-    lbu     $t2,    ($t1)
-                        </code>
-                    </pre>
-                    <img class="center" src="/img/lb2.jpeg" width=500 />
+                    <figure class="center">
+                        <img class="center" src="/img/lb2.jpeg" width=500 />
+                    </figure>
 				</section>
 
 				<section>
 					<h2><span class="green">Load</span> Operation</h2>
-                    <pre>
-                        <code>
-    la      $t1,    x
-    addiu   $t1,    $t1,    3
-    lbu     $t2,    ($t1)
-                        </code>
-                    </pre>
+                    <figure class="center">
                     <img class="center" src="/img/lb3.jpeg" width=500 />
+                    </figure>
 				</section>
 
 				<section>
@@ -202,7 +179,9 @@
 					<h2><span class="green">Store</span> Operations</h2>
                     <p class="center">Reverse of load operation</p>
                     <p class="center">Transfers data from a register to a memory location</p>
-				</section>				
+				</section>
+
+				
 			</div>
 		</div>
 
