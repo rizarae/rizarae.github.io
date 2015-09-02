@@ -31,3 +31,6 @@ main:
 	syscall
 	la	$a0,	input
 	syscall
+	
+	li	$v0,	10			#syscall 10 (exit)
+	syscall

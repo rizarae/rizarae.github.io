@@ -36,4 +36,7 @@ main:
 	syscall
 	move	$a0,	$t1		#print product
 	syscall
+	
+	li	$v0,	10			#syscall 10 (exit)
+	syscall
 .data
