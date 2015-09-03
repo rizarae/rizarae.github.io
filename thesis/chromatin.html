@@ -93,7 +93,55 @@
 				</section>
 
 				<section>
+					<h2><span class="green">Chromatin</span> Dots</h2>
+					<figure class="center">
+						<img src="fixed/17f.jpg" width=700 />
+					</figure>
+				</section>
+
+				<section>
 					<h2><span class="green">Thresholding</span></h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Thresholding</span></h2>
+					<div>
+						$f(x) = \begin{cases} 0 & x < \alpha \\ 1 & x \ge \alpha \end{cases}$
+					</div>
+				</section>
+
+				<section>
+					<h2><span class="green">Otsu's Method</span></h2>
+					<p class="center">Automatically perform clustering-based image thresholding</p>
+					<p class="center">Separate classes into two, such that their interclass variance is maximal</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Otsu's Method</span></h2>
+					<h3>Algorithm</h3>
+					<ol>
+						<li>Compute histogram and probabilities of each intensity level</li>
+						<li>Set up initial $\omega_i(0)$ and $\mu_i(0)$</li>
+						<li>Step through all possible thresholds $t = 1 \ldots$ maximum intensity</li>
+						<ol>
+							<li>Update $\omega_i$ and $\mu_i$</li>
+							<li>Compute $\sigma^2_b(t)$</li>
+							<li>Desired threshold corresponds to the maximum $\sigma^2_b(t)$</li>
+							<li>You can compute two maxima (and two corresponding thresholds). $\sigma^2_{b1}(t)$ is the greater max and $\sigma^2_{b2}(t)$ is the greater or equal maximum</li>
+							<li>Desired $threshold = \frac{\text{threshold}_1 + \text{threshold}_2 }{2}$</li>
+						</ol>
+					</ol>
+				</section>
+
+				<section>
+					<h2><span class="green">Multi Otsu Method</span></h2>
+					<p class="center">Extension of the original method to multi-level thresholding</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Data Preprocessing</span></h2>
+					<p class="center">Transform image to CIEL*a*b* color space</p>
+					<p class="center">Remove mean intensity level</p>
 				</section>
 
 				<section>
@@ -119,13 +167,26 @@
 				<section>
 					<h2><span class="green">Results</span></h2>
 					<figure class="center">
-						<img src="/thesis/1/14c.JPG.a.jpg" width=340 />
-						<img src="/thesis/fixed/14c.JPG" width=340 />
+						<img src="/thesis/1/8c.JPG.a.jpg" width=340 />
+						<img src="/thesis/fixed/8c.JPG" width=340 />
+					</figure>
+				</section>
+
+				<section>
+					<h2><span class="green">Results</span></h2>
+					<figure class="center">
+						<img src="/thesis/1/16c.JPG.a.jpg" width=340 />
+						<img src="/thesis/fixed/16c.JPG" width=340 />
 					</figure>
 				</section>
 
 				<section>
 					<h2><span class="green">Further</span> Steps</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Further</span> Steps</h2>
+					<p class="center">Cell boundary extraction using Hough Transform and Watershed Algorithm</p>
 				</section>
 			</div>
 		</div>
