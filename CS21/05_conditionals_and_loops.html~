@@ -114,13 +114,13 @@ an instruction</i>?</p>
 					<h2><span class="green">Conditional </span>Execution and <span class="green">Looping </span>Structures</h2>
                     <h3>Conditional Execution</h3>
                     <figure>
-                        <img src="/img/dowhile.jpg" src=500 />
+                        <img src="/img/ifthenelse.jpg" src=500 />
                     </figure>
 				</section>
 
 				<section>
 					<h2><span class="green">Conditional </span>Execution and <span class="green">Looping </span>Structures</h2>
-                    <h3>Conditional Execution</h3>
+                    <h3>Looping Structures</h3>
                     <figure>
                         <img src="/img/dowhile.jpg" src=500 />
                     </figure>
