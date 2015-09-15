@@ -62,7 +62,7 @@
                             <a class="green" href="quiz2.pdf">Quiz</a>
                         </li>
                         <li><a class="green" href="03_representing_real_numbers.html">Representing Real Numbers</a></li>
-                        <!--<li><a class="green" href="04_memory.html">Memory: Registers and Cache</a></li>-->
+                        <li><a class="green" href="04_memory.html">Memory: Registers and Cache</a></li>
                         <!--<li><a class="green" href="05_memory_2.html">Memory: Main and External Memories</a></li>-->
                         <!--<li><a class="green" href="06_interfaces_and_io.html">Interfaces and I/O Devices</a></li>-->
                     </ol>
@@ -73,16 +73,16 @@
                     <ol>
                         <li>
                             <a class="green" href="01_intro_to_assembly.html">Introduction to Assembly Language Programming</a><br/>
-                            <a class="green" href="laboratory1 - manual.pdf">Laboratory 1 Manual</a><br/>
+                            <a class="green" href="laboratory1 - manual.pdf">Laboratory 1 Manual</a> | <a class="green" href="asm/1.asm">Solution</a><br/>
                             <a class="green" href="mipscode.pdf">MIPS ISA</a><br/>
                         </li>
                         <li>
                             <a class="green" href="02_registers.html">Register-Register Operations</a><br/>
-                            <a class="green" href="laboratory2 - manual.pdf">Laboratory 2 Manual</a>
+                            <a class="green" href="laboratory2 - manual.pdf">Laboratory 2 Manual</a> | <a class="green" href="asm/2.asm">Solution</a>
                         </li>
                         <li>
                             <a class="green" href="03_load_and_store.html">Load and Store Operations</a><br/>
-                            <a class="green" href="laboratory3 - manual.pdf">Laboratory 3 Manual</a>
+                            <a class="green" href="laboratory3 - manual.pdf">Laboratory 3 Manual</a> | <a class="green" href="asm/3.asm">Solution</a>
                         </li>
                         <!--<li><a class="green" href="04_bit_operations.html">Bit Operations</a></li>-->
                         <!--<li><a class="green" href="05_conditionals_and_loops.html">Conditional and Loops</a></li>-->
@@ -108,7 +108,7 @@
                 <section>
                     <h2>Grading Sheet</h2>
                     <ol>
-                        <li><a class="green" href="https://docs.google.com/spreadsheets/d/1C5zj9Pgtq4N1B9cItqqwMDrLnkecq5WH-5kdG_G1J5Q/edit?pli=1#gid=0">WFWX/WFUV</a></li>
+                        <li><a class="green" href="http://m.comic.naver.com/webtoon/detail.nhn?titleId=350217&no=31&page=1"><!--"https://docs.google.com/spreadsheets/d/1C5zj9Pgtq4N1B9cItqqwMDrLnkecq5WH-5kdG_G1J5Q/edit?pli=1#gid=0"-->WFWX/WFUV</a></li>
                     </ol>
                 </section>
 			</div>
