@@ -83,7 +83,14 @@
 				<section>
 					<h2><span class="green">Voltage</span> Division</h2>
                     <figure class="center">
-                        <img src="/img/voltagediv5.jpg" width=400 />
+                        <img src="/img/voltagediv5.jpg" width=500 />
+                    </figure>
+				</section>
+
+				<section>
+					<h2><span class="green">Current</span> Division</h2>
+                    <figure class="center">
+                        <img src="/img/currentdiv4.jpg" width=500 />
                     </figure>
 				</section>
 			</div>
