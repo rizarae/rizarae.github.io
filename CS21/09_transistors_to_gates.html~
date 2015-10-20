@@ -207,14 +207,14 @@
 				<section>
 					<h2>Logic <span class="green">Gates</span></h2>
                     <p class="center">Components that implement logic functions</p>
-                    <ul>
-                        <li>Not</li>
-                        <li>And</li>
-                        <li>Or</li>
-                        <li>Xor</li>
-                        <li>Nand</li>
-                        <li>Nor</li>
-                    </ul>
+                    <p class="center">
+                        <span>Not</span><br/>
+                        <span>And</span><br/>
+                        <span>Or</span><br/>
+                        <span>Xor</span><br/>
+                        <span>Nand</span><br/>
+                        <span>Nor</span>
+                    </p>
 				</section>
 
 				<section>
