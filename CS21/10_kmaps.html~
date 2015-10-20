@@ -117,7 +117,7 @@ the values of inputs as 1s or 0s: 1 when <span class="green">uncomplemented</spa
 				<section>
 					<h2>Product of <span class="green">Maxterms</span></h2>
                     <h3>Maxterm</h3>
-                    <p>A boolean expression (sum of variables) corresponding to a row in a truth table</p>
+                    <p class="center">A boolean expression (sum of all variables) corresponding to a row in a truth table</p>
 				</section>
 
 				<section>
