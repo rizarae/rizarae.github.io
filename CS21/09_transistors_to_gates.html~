@@ -220,8 +220,7 @@
 				<section>
 					<h2>Logic <span class="green">Gates</span></h2>
                     <figure class="center">
-                        <img class="center" width = 400 src="/img/gates.jpg"/>
-                        <figcaption>Source: <i>https://electrosome.com/wp-content/uploads/2013/02/Logic-Gates-using-Transistors.jpg</i></figcaption>
+                        <img class="center" width = 400 src="/img/allgates.jpg"/>
                     </figure>
 				</section>
 
