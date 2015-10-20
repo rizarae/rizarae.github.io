@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 21: Computer Organization and Assembly Language Programming</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>Transistors to Gates</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>Boolean Algebra</li>
+                        <li>Transistors</li>
+                        <li>Gates</li>
+                    </ol>
+				</section>
+
+				<section>
+					<h2><span class="green">Boolean</span> Algebra</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Algebra</span></h2>
+                    <p class="center">An algebra is a mathematical theory involving a set of elements <i>K</i> and a set of operations <i>I</i> that acts on members of <i>K</i></p>
+				</section>
+
+				<section>
+					<h2><span class="green">Algebra</span>: Example</h2>
+                    <p class="center">K = $\mathbb{R}$<br />I = {+, -, *, /}</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Boolean</span> Algebra</h2>
+                    <p class="center">K = {0,1}</p>
+                    <p class="center"><span class="green">George Boole</span>, <i>Laws of Thought</i></p>
+				</section>
+
+				<section>
+					<h2>Boolean Algebra and <span class="green">Circuit Design</span></h2>
+                    <p class="center"><span class="green">Claude Shannon</span> showed that Boolean algebra provides the theory needed for the analysis and design of <i>digital circuits</i> built from electromechanical relays</p>
+				</section>
+
+				<section>
+					<h2>Axioms and <span class="green">Postulates</span></h2>
+                    <h3>Closure</h3>
+                    <p class="center">If <b>a</b> and <b>b</b> are in <b>K</b>, then <b>a + b</b> is in <b>K</b></p>
+                    <p class="center">If <b>a</b> and <b>b</b> are in <b>K</b>, then <b>ab</b> is in <b>K</b></p>
+				</section>
+
+				<section>
+					<h2>Axioms and <span class="green">Postulates</span></h2>
+                    <h3>Zero Axiom/Identity</h3>
+                    <p class="center">a + 0 = a</p>
+				</section>
+
+				<section>
+					<h2>Axioms and <span class="green">Postulates</span></h2>
+                    <h3>Unit Axiom/Identity</h3>
+                    <p class="center">a1 = a</p>
+				</section>
+
+				<section>
+					<h2>Axioms and <span class="green">Postulates</span></h2>
+                    <h3>Commutativity</h3>
+                    <p class="center">a + b = b + a</p>
+                    <p class="center">ab = ba</p>
+				</section>
+
+				<section>
+					<h2>Axioms and <span class="green">Postulates</span></h2>
+                    <h3>Distributivity</h3>
+                    <p class="center">a + bc = (a + b)(a + c)</p>
+                    <p class="center">a(b + c) = ab + ac</p>
+				</section>
+
+				<section>
+					<h2>Axioms and <span class="green">Postulates</span></h2>
+                    <h3>Inverse Axioms</h3>
+                    <p class="center">a + a' = 1</p>
+                    <p class="center">aa' = 0</p>
+				</section>
+
+				<section>
+					<h2>Theorems</h2>
+                    <h3>Idempotence</h3>
+                    <p class="center">a + a = a</p>
+                    <p class="center">aa = a</p>
+				</section>
+
+				<section>
+					<h2>Theorems</h2>
+                    <h3>Involution</h3>
+                    <p class="center">(a')' = a</p>
+				</section>
+
+				<section>
+					<h2>Theorems</h2>
+                    <h3>Zero and Unit Property</h3>
+                    <p class="center">a0 = 0</p>
+                    <p class="center">a + 1 = 1</p>
+				</section>
+
+				<section>
+					<h2>Theorems</h2>
+                    <h3>Associativity</h3>
+                    <p class="center">a + (b + c) = (a + b) + c</p>
+                    <p class="center">a(bc) = (ab)c</p>
+				</section>
+
+				<section>
+					<h2>Theorems</h2>
+                    <h3>De Morgan's</h3>
+                    <p class="center">(a + b)' = a'b'</p>
+                    <p class="center">(ab)' = a' + b'</p>
+				</section>
+
+				<section>
+					<h2>Theorems</h2>
+                    <h3>Absorption</h3>
+                    <p class="center">a + ab = a</p>
+                    <p class="center">a(a + b) = a</p>
+                    <p class="center">ab + ab' = a</p>
+                    <p class="center">(a + b)(a + b') = a</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Transistors</span></h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Transistors</span></h2>
+                    <figure class="center">
+                        <img class="center" width = 400 src="/img/transistors.jpg"/>
+                        <figcaption>Source: <i>http://images.wisegeek.com/transistors.jpg</i></figcaption>
+                    </figure>
+				</section>
+
+				<section>
+					<h2><span class="green">Transistors</span></h2>
+                    <p class="center">Building blocks of modern electronic devices</p>
+                    <figure class="center">
+                        <img class="center" width = 400 src="/img/npn-pnp-symbols.png"/>
+                        <figcaption>Source: <i>https://learn.sparkfun.com/tutorials/transistors</i></figcaption>
+                    </figure>
+				</section>
+
+				<section>
+					<h2><span class="green">Transistors:</span> Analogy</h2>
+                    <figure class="center">
+                        <img class="center" width = 400 src="/img/npn-pnp-symbols.png"/>
+                        <figcaption>Source: <i>https://learn.sparkfun.com/tutorials/transistors</i></figcaption>
+                    </figure>
+				</section>
+
+				<section>
+					<h2><span class="green">Gates</span></h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Combinational Logic</span></h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
