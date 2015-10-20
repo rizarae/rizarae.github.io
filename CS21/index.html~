@@ -85,17 +85,19 @@
                             <a class="green" href="laboratory3 - manual.pdf">Laboratory 3 Manual</a> | <a class="green" href="asm/3.asm">Solution</a>
                         </li>
                         <li><a class="green" href="04_bit_operations.html">Bit Operations</a></li>
-                        <li><a class="green" href="05_conditionals_and_loops.html">Conditional and Loops</a> | <a class="green" href="asm/mult.asm">Solution (Mult)</a> | <a class="green" href="asm/gcd.asm">Solution (GCD)</a> | <a class="green" href="asm/fib.asm">Solution (LCM)</a> | <a class="green" href="asm/ac.asm">Solution (Lowercase)</a></li>
+                        <li><a class="green" href="05_conditionals_and_loops.html">Conditional and Loops</a> | <a class="green" href="asm/mult.asm">Solution (Mult)</a> | <a class="green" href="asm/gcd.asm">Solution (GCD)</a> | <a class="green" href="asm/lcm.asm">Solution (LCM)</a> | <a class="green" href="asm/ac.asm">Solution (Lowercase)</a></li>
                         <li><span class="green">Functions</span> | <a class="green" href="asm/fib.asm">Solution (Fibonacci)</a> | <a class="green" href="asm/fact.asm">Solution (Factorial)</a></li>
                     </ol>
 				</section>
 
-				<!--<section>
+				<section>
 					<h2>Electronics Lecture Slides</h2>
                     <ol>
-                        <li><a class="green" href="01_laws_of_electricity.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
+                        <li><a class="green" href="07_introduction_to_electric_circuits.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
+                        <li><a class="green" href="08_network_analysis.html">Network Analysis</a></li>
+                        <li><a class="green" href="09_transistors_to_gates.html">Transistors to Gates</a></li>
                     </ol>
-				</section>-->
+				</section>
 
 				<!--<section>
 					<h2>Microcontroller Programming Lecture Slides</h2>
