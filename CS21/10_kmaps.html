@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 21: Computer Organization and Assembly Language Programming</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>Karnaugh Maps</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>Canonical Forms</li>
+                        <li>Karnaugh Maps</li>
+                    </ol>
+				</section>
+
+				<section>
+					<h2><span class="green">Goal</span></h2>
+                    <p>Simplify a circuit by minimizing the number of gates used</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Canonical</span> Forms</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Canonical</span> Form</h2>
+                    <p class="center">Sum of Minterms</p>
+                    <p class="center">Product of Maxterms</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Canonical</span> Form</h2>
+                    <p>Defines a direct relationship between a truth table and a circuit implementation/expression</p>
+				</section>
+
+				<section>
+					<h2>Sum of <span class="green">Minterms</span></h2>
+                    <h3>Minterm</h3>
+                    <p>A boolean expression (product of variables) corresponding to a row in a truth table</p>
+				</section>
+
+				<section>
+					<h2>Sum of <span class="green">Minterms</span></h2>
+                    <h3>Minterm</h3>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/minterm1.jpeg"/>
+                    </figure>
+				</section>
+                
+                <section>
+					<h2>Sum of <span class="green">Minterms</span></h2>
+                    <h3>Indexing Minterms</h3>
+                    <p class="center">The minterms of a function are frequently indexed by ”reading”
+the values of inputs as 1s or 0s: 1 when <span class="green">uncomplemented</span>, 0 when
+<span class="green">complemented</span></p>
+                    <p class="center">abcd = 1111 = $m_{15}$ (or minterm 15)</span>
+                    <p class="center">a'bcd = 0111 = $m_{7}$ (or minterm 7)</span>
+				</section>
+
+                <section>
+					<h2>Sum of <span class="green">Minterms</span></h2>
+                    <p class="center">Given an n-variable Boolean function, we could express it a sum of <i>some</i> of its minterms.</p>
+                    <p class="fragment center"><span class="green">Which minterms? </span>Rows in which the output is 1</p>
+				</section>
+
+				<section>
+					<h2>Sum of <span class="green">Minterms</span></h2>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/minterm2.jpeg"/>
+                    </figure>
+                    <div class="fragment">
+                        <p class="center">$m_0 + m_1 + m_2 + m_3 + m_7$</p>
+                        <p class="center">f(a,b,c) = a’b’c’ + a’b’c + a’bc’ + a’bc + abc</p>
+                    </div>
+				</section>
+
+				<section>
+					<h2>Product of <span class="green">Maxterms</span></h2>
+                    <h3>Maxterm</h3>
+                    <p>A boolean expression (sum of variables) corresponding to a row in a truth table</p>
+				</section>
+
+				<section>
+					<h2>Product of <span class="green">Maxterms</span></h2>
+                    <h3>Maxterm</h3>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/minterm1.jpeg"/>
+                    </figure>
+				</section>
+
+                <section>
+					<h2>Product of <span class="green">Maxterms</span></h2>
+                    <p class="center">Given an n-variable Boolean function, we could express it a product of <i>some</i> of its maxterms.</p>
+                    <p class="fragment center"><span class="green">Which minterms? </span>Rows in which the output is 0</p>
+				</section>
+
+				<section>
+					<h2>Product of <span class="green">Maxterms</span></h2>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/minterm3.jpeg"/>
+                    </figure>
+                    <div class="fragment">
+                        <p class="center">$(M_4)(M_5)(M_6)$</p>
+                        <p class="center">F(A,B,C) = (A’ + B + C)(A’ + B + C’)(A’ + B’ + C)</p>
+                        <p class="fragment center">Unlike in the Sum-of-Minterm: zero column value -> <span class="green">uncomplemented input</span></p>
+                    </div>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps</h2>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps</h2>
+                    <h3>SOP and POS Forms</h3>
+                    <p class="center"><span class="green">Sum of Products</span>: Just like sum of minterms, but terms/”addends” need not be
+minterms</p>
+                    <p class="center"><span class="green">Product of Sums</span>: Just like product of maxterms, but terms/”multiplicands” need not be maxterms</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps</h2>
+                    <p class="center">Sum of Minterms and Product of Maxterms are not minimal!</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps</h2>
+                    <p class="center">aka K-maps</p>
+                    <p class="center">Maurice Karnaugh (1950)</p>
+                    <p class="center">Modified truth table intended to allow minimal SOP and POS expressions to be obtained by visual inspection</p>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps: Setup</h2>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/minterm1d.jpeg"/>
+                    </figure>
+                    <div class="fragment">
+                        <p class="center">Split the variables into two sets: those that would become rows and those that would become columns</p>
+                        <p class="center">Use gray coding in labelling rows and columns</p>
+                        <p class="center">Fill in the truth values</p>
+                    </div>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps: Minimal SOP</h2>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/k2.jpeg"/>
+                    </figure>
+                    <div class="fragment">
+                        <p class="center">Find squares and rectangles of 1s, making sure that all 1 are
+covered. The dimensions of each rectangle or square must be powers of 2. Take note also that the map's edges wrap around!</p>
+                        <p class="center">Each square or rectangle is a term, with the unchanged variable throughout the shape being present in the term</p>
+                    </div>
+				</section>
+
+				<section>
+					<h2><span class="green">Karnaugh</span> Maps: Minimal POS</h2>
+                    <figure class="center">
+                        <img class="center" width = 500 src="/img/k3.jpeg"/>
+                    </figure>
+                    <div class="fragment">
+                        <p class="center">Find squares and rectangles of 0s, making sure that all 0 are
+covered.. The dimensions of each rectangle or square must be powers of 2. Take note also that the map's edges wrap around!</p>
+                        <p class="center">Each square or rectangle is a term, with the unchanged variable throughout the shape being present in the term</p>
+                    </div>
+				</section>
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
