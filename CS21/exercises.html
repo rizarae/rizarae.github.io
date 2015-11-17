@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 21: Computer Organization and Assembly Language Programming</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>CS 21: Computer Organization and Assembly Language Programming</h2>
+					<h3>Exercises</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Laws of Electricity</h2>
+					<p class="center">1. In the following resistor network, compute for the current drawn from each of the 5V voltage sources.</p>
+					<figure class="center">
+						<img src="/img/circ1.png" width=400 />
+					</figure>
+				</section>
+				
+				<section>
+					<h2>Laws of Electricity</h2>
+					<p class="center">2. Compute for the power dissipated from each of the resistors in the network with a 5V voltage source.</p>
+					<figure class="center">
+						<img src="/img/circ2.png" width=400 />
+					</figure>
+				</section>
+				
+				<section>
+					<h3>Boolean Algebra</h3>
+					<p class="center">1. Prove the following theorems.<br/>
+						<ol>
+							<li>a + ab = a</li>
+							<li>ab + ab' = a</li>
+							<li>(a + b)(a + b') = a</li>
+							<li>a + a'b = a + b</li>
+							<li>a(a' + b) = ab</li>
+						</ol>
+					</p>
+				</section>
+				
+				<section>
+					<h3>Boolean Algebra</h3>
+					<p class="center">2. Show that <i>(A'B + C'DE + C'DE')(A'C)'(A + D)</i> is equivalent to <i>AB + C'D</i></p>
+				</section>
+				
+				<section>
+					<h3>Karnaugh Maps</h3>
+					<p class="center">Find an MPOS for <i>F(A,B,C,D,E) = C(A + E) + ABC + (D' + C')'</i></p>
+				</section>
+				
+				<section>
+					<h3>Combinational Logic</h3>
+					<p class="center">1. Draw a circuit diagram that implements a 2:1 multiiplexer using all nand gates. If each nand gate
+					has a timing specification of 10ns, what is the timing specification for the all-nand 2:1 multiplexer?</p>
+				</section>
+				
+				<section>
+					<h3>Combinational Logic</h3>
+					<p class="center">2. Use a 2:1 multiplexer to implement the following truth table.</p>
+					<table>
+						<tr>
+							<th>A</th>
+							<th>B</th>
+							<th>C</th>
+							<th>Output</th>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</table>
+				</section>
+				
+				<section>
+					<h2>Sequential Logic</h2>
+					<p class="center">1. Using flip-flops, implement a 2-bit grey-code counter. (00->01->11->10->00...)</p>
+				</section>
+				
+				<section>
+					<h2>Pipelining</h2>
+					<p class="center">
+					A single-cycle processor, executing a program with 1000 instructions, has an operating frequency of 100 MHz. The processor was pipelined, which caused its CPI to increase by 20%. </br>
+
+		Assume that we were able to distribute the delay among the pipeline stages perfectly, and we are using the new maximum usable frequency. </br>
+
+		If the new execution time is 2x10-6s, into how many stages was the processor pipelined? </br>
+		Ignore the fill-in time (time at the beginning of program execution when pipeline is being filled) and drain time (time at the end of the program when the pipelined is being drained).
+					</p>
+				</section>
+				
+				<section>
+					<h2>Parallelism</h2>
+					<p class="center">
+						I proposed 3 improvements for my processor, only two which can be implemented.</br>
+		(a) Improvement A halved the execution time of 20% of instructions.</br>
+		(b) Improvement B quartered the execution time of 50% of instructions not affected by 
+			Improvement A.</br>
+		(c) Improvement C halved the execution of 80% of instructions not affected by 
+			Improvements A & B.</br>
+
+		Which two improvements combined yields the most speedup? Show all possible speedups.
+
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script src="/js/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
