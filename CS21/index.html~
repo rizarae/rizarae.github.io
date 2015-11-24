@@ -101,7 +101,7 @@
                         <li><a class="green" href="12_basic_processor.html">Basic Processor</a></li>
                         <li><a class="green" href="13_cpu_performance.pdf">CPU Performance</a></li>
                         <li><a class="green" href="14_pipelining">Pipelining</a></li>
-                        <li><a class="green" href="15_amdahls">Amdahl's</a></li>
+                        <li><a class="green" href="15_amdahls">Amdahl's Law</a></li>
                     </ol>
 				</section>
 
