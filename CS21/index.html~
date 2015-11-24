@@ -96,6 +96,12 @@
                         <li><a class="green" href="07_introduction_to_electric_circuits.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
                         <li><a class="green" href="08_network_analysis.html">Network Analysis</a></li>
                         <li><a class="green" href="09_transistors_to_gates.html">Transistors to Gates</a></li>
+                        <li><a class="green" href="10_kmaps.html">Karnaugh Maps</a></li>
+                        <li><a class="green" href="11_combinational_and_sequential_logic.html">Combinational and Sequential Circuits</a></li>                    
+                        <li><a class="green" href="12_basic_processor.html">Basic Processor</a></li>
+                        <li><a class="green" href="13_cpu_performance.pdf">CPU Performance</a></li>
+                        <li><a class="green" href="14_pipelining">Pipelining</a></li>
+                        <li><a class="green" href="15_amdahls">Amdahl's</a></li>
                     </ol>
 				</section>
 
