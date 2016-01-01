@@ -530,10 +530,4 @@ body {
 .reveal .slide-number {
   color: #3b759e; }
 
-/*********************************************
- * LINKS
- *********************************************/
-.reveal a {
-  color:gray !important;
-}
 /*# sourceMappingURL=tope.css.map */
