@@ -54,39 +54,17 @@
 
 				<section>
 					<h2>Lecture Slides</h2>
+                    <ol>
+                        <li><a class="green" href="">Course Introduction</a></li>
+                    </ol>
 				</section>
 
 				<section>
 					<h2>Laboratory Slides</h2>
 				</section>
 
-				<section>
-					<h2>Electronics Lecture Slides</h2>
-                    <ol>
-                        <li><a class="green" href="07_introduction_to_electric_circuits.html">Introduction to Electric Circuits: Laws of Electricity</a></li>
-                        <li><a class="green" href="08_network_analysis.html">Network Analysis</a></li>
-                        <li><a class="green" href="09_transistors_to_gates.html">Transistors to Gates</a></li>
-                        <li><a class="green" href="10_kmaps.html">Karnaugh Maps</a></li>
-                        <li><a class="green" href="11_combinational_and_sequential_logic.html">Combinational and Sequential Circuits</a></li>                    
-                        <li><a class="green" href="12_basic_processor.html">Basic Processor</a></li>
-                        <li><a class="green" href="13_cpu_performance.pdf">CPU Performance</a></li>
-                        <li><a class="green" href="14_pipelining.pdf">Pipelining</a></li>
-                        <li><a class="green" href="15_amdahls.pdf">Amdahl's Law</a></li>
-                    </ol>
-				</section>
-
-				<!--<section>
-					<h2>Microcontroller Programming Lecture Slides</h2>
-                    <ol>
-                        <li><a href="/00_course_intro.html">Course Introduction</a></li>
-                    </ol>
-				</section>-->
-
                 <section>
                     <h2>Grading Sheet</h2>
-                    <ol>
-                        <li><a class="green" href="https://docs.google.com/spreadsheets/d/1C5zj9Pgtq4N1B9cItqqwMDrLnkecq5WH-5kdG_G1J5Q/edit?pli=1#gid=0">WFWX/WFUV</a></li>
-                    </ol>
                 </section>
 			</div>
 		</div>
