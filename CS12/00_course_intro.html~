@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
 
@@ -81,6 +80,9 @@
 
                 <section>
 					<h2>Schedule</h2>
+                    <h3>THUV Th 10-1 lab, T 11-1 lec</h3>
+                    <h3>THWX Th 1-4 lab, T 2-4 lec</h3>
+                    <h3>WFUV F 10-1 lab, W 11-1 lec</h3>
 				</section>
 
                 <section>
@@ -91,12 +93,12 @@
 					<h2>Requirements</h2>
                     <div class="center"><canvas id="reqs" width="500" height="450"></canvas></div>
 					<div class="legend" id="legend"></div>
-					<!--<script type="text/javascript">
+					<<script type="text/javascript">
 						var canvas = document.getElementById("reqs");
 						var ctx = canvas.getContext("2d");
 						var data = [
 							{
-								value: 20,
+								value: 30,
 								color:"#6BCAE2",
 								highlight: "#6BCAE2",
 								label: "Long Exams"
@@ -137,7 +139,7 @@
 						});
 						var legend = myDoughnutChart.generateLegend();
 						document.getElementById("legend").innerHTML = legend;
-					</script>-->
+					</script>
 				</section>
 
                 <section>
