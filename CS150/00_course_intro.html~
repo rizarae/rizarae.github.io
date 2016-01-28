@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 12: Computer Programming II</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="/js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h2>CS 12: Computer Programming II</h2>
+					<h3 class="green">Course Overview and Introduction</h3>
+					<p class="center">
+						<a href="mailto:kedelaspenas@up.edu.ph">Kristofer E. delas Pe&ntilde;as</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>Personal Introductions</li>
+                        <li>Course Syllabus</li>
+                    </ol>
+				</section>
+
+                <section>
+					<h1>Hello there!</h1>
+				</section>
+
+                <section>
+					<h2>The Instructor</h2>
+                    <h3 class="fragment green">Kristofer E. delas Pe&ntilde;as</h3>
+                    <h4 class="fragment">Computer Vision and Machine Intelligence Group</h4>
+                    <h4 class="fragment">MWF 1:00pm - 4:00pm, Rm. 307, UP AECH</h4>
+                    <p class="center fragment"><a href="mailto:kedelaspenas@up.edu.ph">kedelaspenas@up.edu.ph</a></p>
+				</section>
+
+                <section>
+					<h2>THE <strike><span>HELL</span></strike> ROAD AHEAD</h2>
+                    <h3>Course Syllabus</h3>
+				</section>
+
+                <section>
+					<h2>Course Credit</h2>
+                    <h1><span class="green">3</span> UNITS</h1>
+				</section>
+
+                <section>
+					<h2>Prerequisite</h2>
+                    <h1>CS <span class="green">11</span></h1>
+				</section>
+
+                <section>
+					<h2>Schedule</h2>
+                    <h3><span class="green">THUV</span> Th 10-1 lab, T 11-1 lec</h3>
+                    <h3><span class="green">THWX</span> Th 1-4 lab, T 2-4 lec</h3>
+                    <h3><span class="green">WFUV</span> F 10-1 lab, W 11-1 lec</h3>
+				</section>
+
+                <section>
+					<h2>Course <span class="green">Description</span></h2>
+                    <p>Advanced programming techniques. Recursion. Abstract Data Types: stacks, queues, linked structures. Programming inrefaces. Introduction to object-oriented programming: classes, inheritancem polymorphism. Event-handling. Exception handling. API programming.</p>
+				</section>
+
+                <section>
+					<h2>Requirements</h2>
+                    <div class="center"><canvas id="reqs" width="500" height="450"></canvas></div>
+					<div class="legend" id="legend"></div>
+					<<script type="text/javascript">
+						var canvas = document.getElementById("reqs");
+						var ctx = canvas.getContext("2d");
+						var data = [
+							{
+								value: 30,
+								color:"#6BCAE2",
+								highlight: "#6BCAE2",
+								label: "Long Exams"
+							},
+							{
+								value: 10,
+								color: "#51A5BA",
+								highlight: "#51A5BA",
+								label: "Quizzes"
+							},
+							{
+								value: 20,
+								color: "#AFEAAA",
+								highlight: "#AFEAAA",
+								label: "Machine Exercises"
+							},
+							{
+								value: 20,
+								color: "#87E293",
+								highlight: "#87E293",
+								label: "Hands-on Exams"
+							},
+							{
+								value: 20,
+								color: "#FE8402",
+								highlight: "#FE8402",
+								label: "Machine Problems"
+							}
+						];
+						var myDoughnutChart = new Chart(ctx).Doughnut(data, {
+							legendTemplate : "<ul style=\"text-align:right;list-style: none;\" class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span class=\"legend-color\" style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+						});
+						var legend = myDoughnutChart.generateLegend();
+						document.getElementById("legend").innerHTML = legend;
+					</script>
+				</section>
+
+                <section>
+					<h2>Grading System</h2>
+                    <table>
+                        <tr>
+                            <th>General Average</th>
+                            <th>Final Grade</th>
+                        </tr>
+                        <tr>
+							<td>[92-100]</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>[88-92)</td>
+							<td>1.25</td>
+						</tr>
+						<tr>
+							<td>[84-88)</td>
+							<td>1.50</td>
+						</tr>
+						<tr>
+							<td>[80-84)</td>
+							<td>1.75</td>
+						</tr>
+						<tr>
+							<td>[76-80)</td>
+							<td>2.00</td>
+						</tr>
+						<tr>
+							<td>[72-76)</td>
+							<td>2.25</td>
+						</tr>
+						<tr>
+							<td>[68-72)</td>
+							<td>2.50</td>
+						</tr>
+						<tr>
+							<td>[64-68)</td>
+							<td>2.75</td>
+						</tr>
+						<tr>
+							<td>[60-64)</td>
+							<td>3.00</td>
+						</tr>
+						<tr>
+							<td>[0-60)</td>
+							<td>5.00</td>
+						</tr>
+                    </table>
+				</section>
+    
+                <section>
+					<h2>Some Important Dates</h2>
+                    <div class="fragment">
+                        <h3>First Long Exam: <span class="green">23/24 February</span></h3>
+                        <h3>First HOCE: <span class="green">21 March</span></h3>
+                    </div>
+				</section>
+
+                <section>
+					<h2>References</h2>
+                    <h3>The library: any OOP/Java book</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="/lib/js/head.min.js"></script>
+		<script src="/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS 150: Chapter 3A - Describing Syntax</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/tope.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script src="../js/Chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1 class="green">CS 150: Chapter 3A</h1>
+					<h2>Describing Syntax</h2>
+          <h4>
+						<a href="mailto:rapineda1@up.edu.ph">Riza Rae Pineda</a>
+					</h4>
+				</section>
+
+				<section>
+					<h2 class="green">OUTLINE</h2>
+                    <h4>
+                    <ol>
+                        <li>Introductions</li>
+                        <li>The General Problem of Describing Syntax</li>
+                        <li>The Formal Method of Describing Syntax</li>
+                    </ol></h4>
+				</section>
+
+                <section>
+  				<h1 class="green">SYNTAX</h1>
+                <div class="fragment">
+                    <h2>FORM</h2>
+                </div>
+				</section>
+
+                <section>
+  				<h1 class="green">SEMANTICS</h1>
+                <div class="fragment">
+                    <h2>MEANING</h2>
+                </div>
+				</section>
+
+                <section>
+					<h2> <span class="green">WHILE</span> (boolean_expr):  
+            statement </h2>
+				</section>
+
+                <section>
+					<h1 class="green">SENTENCE</h1>
+                <div class="fragment">
+                    <h3> STRING OF CHARACTERS OVER AN ALPHABET</h3>
+                </div>
+				</section>
+
+               <section>
+					<h1 class="green">LANGUAGE</h1>
+                                  <div class="fragment">
+                    <h3> SET OF SENTENCES</h3>
+                </div>
+				</section>
+                 <section>
+					<h1 class="green">LEXEMES</h1>
+            <div class="fragment">
+                    <h3> LOWEST LEVEL SYNTACTIC UNIT</h3>
+                </div>
+				</section>
+             <section>
+					<h1 class="green">TOKENS</h1>
+            <div class="fragment">
+                    <h3> CATEGORY OF LEXEMES</h3>
+                </div>
+				</section>  
+
+				<section>
+					<h2>index = 2 * count + 17; </h2>
+            <div class="fragment">
+                    <h3 class="green"> &lt;id&gt; = &lt;int_lit&gt; * &lt;id&gt; + &lt;int_lit&gt;;</h3>
+                </div>
+				</section>
+
+				<section>
+					<h1 class="green">RECOGNIZER </h1>
+            <div class="fragment">
+                    <h3>READS STRINGS AND DECIDES IF THEY BELONG TO THE LANGUAGE</h3>
+                </div>
+				</section>
+
+				<section>
+					<h1 class="green">GENERATOR </h1>
+            <div class="fragment">
+                    <h3>GENERATES SENTENCES OF A LANGUAGE</h3>
+                </div>
+				</section>
+        <section>
+					<h1 class="green">GRAMMAR </h1>
+            <div class="fragment">
+                    <h3>FINITE NON-EMPTY SET OF RULES</h3>
+                </div>
+				</section>
+   <section>
+					<h1 class="green">CONTEXT-FREE GRAMMAR </h1>
+            <div class="fragment">
+                    <h3>RULES ARE APPLICABLE REGARDLESS OF CONTEXT</h3>
+                </div>
+				</section>
+   <section>
+					<h2 class="green"  style="text-align:left;">BACKUS-NAUR FORM (BNF)</h2>
+                 <h4><ul>
+            <div class="fragment">
+                    <li style="text-align:left;">Natural notation for describing syntax </li>                </div>
+            <div class="fragment">
+                    <li style="text-align:left;">Metalanguage-used to describe other languages</li>                </div>
+            <div class="fragment">
+                    <li style="text-align:left;">Abstraction of syntactic structures</li>                </div>
+                 </ul></h4>
+				</section>
+       <section>
+					<h2> &lt;assign&gt; → &lt;var&gt; = &lt;expr&gt; </h2>
+            <div class="fragment">
+					<h3 class="green"> LHS → RHS </h3>
+                </div>
+				</section>
+       <section>
+					<h3> <span class="green"><b>LHS</b></span> must always contain a <span class="green"><b>nonterminal</b></span></h3>
+					<h3> <span class="green"><b>RHS</b></span> may contain either a <span class="green"><b>nonterminal</b> or a <b>terminal</b></span></h3>
+				</section>
+       <section>
+					<h2> &lt;stmt&gt; → &lt;single_stmt&gt; | </br> begin &lt;stmt_list&gt; end </h2>
+				</section>
+       <section>
+					<h2> &lt;ident_list&gt; → &lt;ident&gt; | </br> ident , &lt;ident_list&gt;</h2>
+				</section>
+       <section>
+					<h1 class="green">SENTENCE</h1>
+                <div class="fragment">
+                    <h5> STRING OF CHARACTERS OVER AN ALPHABET</h5> </div>
+                <div class="fragment">
+                    <h3> SENTENTIAL FORM THAT HAS ONLY TERMINAL SYMBOLS</h3> </div>                
+				</section>
+         <section>
+					<h1 class="green">SENTENTIAL FORM</h1>
+            <div class="fragment">
+                    <h3>STRING OF SYMBOLS IN A DERIVATION</h3>
+                </div>
+				</section>
+         <section>
+					<h1 class="green">DERIVATIONS</h1>
+            <ol><h3>
+                   <li style="text-align:left;">Leftmost</li>
+                   <li style="text-align:left;">Rightmost</li>
+                   <li style="text-align:left;">Others</li>
+            </h3>
+            </ol>
+				</section>
+         <section>
+          <img src="simplegrammar.png" style="width:1500px;height:250px;">
+				</section>
+         <section>
+					<h1 class="green">PARSE TREE</h1>
+            <div class="fragment">
+                    <h3>HIERARCHICAL SYNTACTIC STRUTURE OF SENTENCES</h3>
+                </div>
+				</section>
+ <section>
+					<h1 class="green">AMBIGUOUS GRAMMAR</h1>
+            <div class="fragment">
+                    <h3>IFF THE GRAMMAR GENERATES A SENTENTIAL FORM THAT HAS TWO OR MORE DISTINCT PARSE TREES</h3>
+                </div>
+				</section>
+<section>
+					<h3>Using the grammar below, <b>trace</b> the leftmost derivation, and <b>draw</b> the parse tree of the ff:</h3>
+          <img src="ambiguousgrammar.png" style="width:1500px;height:250px;">
+          <ol><h3>
+            <li  style="text-align:left;" style="text-align:left;">A = A* B + C </li>
+            <li style="text-align:left;">B = (C+ A * B) </li>   
+          </h3>
+          </ol>
+				</section>
+ <section>
+					<h2 class="green">UNAMBIGUOUS GRAMMAR</h2>
+          <img src="unambig.png" style="width:1500px;height:250px;">
+				</section>
+   <section>
+    <h1 class="green">ASSOCIATIVITY</h1>
+    <h4>Left recursion specifies <b>left associativity</b></h4>
+    <h4>Right recursion specifies<b>right associativity</b></h4>
+   </section>
+   <section>
+    <h1 class="green">SEATWORK!</h1>
+    <h4>(WRITE ON A 1 WHOLE SHEET OF YELLOW PAD PAPER)</h4>
+   </section>
+<section>
+   <section>
+					<h3>A. Using the grammar below, <b>trace</b> the leftmost and rightmost derivations, and <b>draw</b> the parse tree of the ff:</h3>
+          <img src="unambig.png" style="width:1500px;height:250px;">
+          <ol><h3>
+            <li style="text-align:left;">A = (A) *((B+C)) </li>
+            <li style="text-align:left;">B = C * (A + B) </li>   
+            <li style="text-align:left;">A = A *(B)+((C)) </li>   
+          </h3>
+          </ol>
+				</section>
+   <section>
+					<h3>B. <b>Modify</b> the grammar below to include the power operator(<b>**</b>), following the correct precedence and associativity</h3>
+          <img src="unambig.png" style="width:1500px;height:250px;">
+				</section>
+   <section>
+					<h3>C. Consider the following grammar: </h3>
+              <h3 class = "green">&lt;S&gt; → &lt;A&gt; a &lt;B&gt; b </h3>
+              <h3 class = "green">&lt;A&gt; → &lt;A&gt; b | b </h3>
+              <h3 class = "green">&lt;B&gt; → a &lt;B&gt; | a </h3>
+          <h3>Which of the following sentences are in the language generated by the grammar?</h3>
+           <ol><h3>
+            <li style="text-align:left;">baab   </li>
+            <li style="text-align:left;">bbbab  </li>   
+            <li style="text-align:left;">bbaaa</li>   
+            <li style="text-align:left;">bbaab  </li>   
+          </h3>
+          </ol>
+				</section>
+   </section>
+   <section>
+    <h1 class="green">ANSWERS</h1>
+   </section>
+   <section>
+   <section>
+					<h3>B. <b>Modify</b> the grammar below to include the power operator(<b>**</b>), following the correct precedence and associativity</h3>
+          <img src="unambig.png" style="width:1500px;height:250px;">
+          <h3 class="green">&lt;factor&gt; → &lt;expon&gt; ** &lt;factor&gt; | &lt;expon&gt; </h3>
+          <h3 class="green">&lt;expon&gt; → ( &lt;expr&gt; )| id</h3>
+				</section>
+   <section>
+					<h3>C. Consider the following grammar: </h3>
+              <h3 class = "green">&lt;S&gt; → &lt;A&gt; a &lt;B&gt; b </h3>
+              <h3 class = "green">&lt;A&gt; → &lt;A&gt; b | b </h3>
+              <h3 class = "green">&lt;B&gt; → a &lt;B&gt; | a </h3>
+          <h3>Which of the following sentences are in the language generated by the grammar?</h3>
+           <ol><h3>
+            <li style="text-align:left;" class="green"><b>baab</b></li>
+            <li style="text-align:left;">bbbab  </li>   
+            <li style="text-align:left;">bbaaa</li>   
+            <li style="text-align:left;" class="green"><b>bbaab</b></li>   
+          </h3>
+          </ol>
+				</section>
+   </section>
+   <section>
+    <h1 class="green">HOMEWORK!</h1>
+   </section>
+   <section>
+   <section>
+    <h2 class="green">HOMEWORK</h2>
+            <h5><b>(On a 1/4 sheet of yellow pad paper)</b><br/> <br/>
+            <h3 style="text-align:left;">1. Write a grammar for the language consisting of strings that have <b>n copies</b> of the letter a followed by the <b>same number</b> of copies of the letter b, where n > 0. <br/><br/>For example, the strings <span class="green">ab, aaaabbbb, and aaaaaaaabbbbbbbb</span> are in the language but <b>&#917, a, abb, ba, and aaabb</b> are not.</h3>
+				</section> 
+        <section>
+            <h3 style="text-align:left;">2. Draw parse trees for the sentences <b>aabb</b> and <b>aaaabbbb</b>, as derived from the grammar below:</h3>   
+              <h3 class = "green">&lt;S&gt; → &lt;A&gt; a &lt;B&gt; b </h3>
+              <h3 class = "green">&lt;A&gt; → &lt;A&gt; b | b </h3>
+              <h3 class = "green">&lt;B&gt; → a &lt;B&gt; | a </h3>
+				</section> 
+   <section>
+          <h3 style="text-align:left;">3. Give an <b>unambiguous grammar</b> for the following languages:</h3>
+            <h4 class="green">Note: Empty string(Epsilon) is not valid. Leading zeros are accepted. (Assume that the compiler will handle proper semantic analysis) </h4>
+           <ol><h3>
+            <li style="text-align:left;">Binary numbers</li>
+            <li style="text-align:left;">Octal numbers</li>  
+            <li style="text-align:left;">Decimal numbers</li> 
+            <li style="text-align:left;">Hexadecimal numbers</li>   
+            <li style="text-align:left;">The set of all strings consisting of 1 or more a’s separated by semicolons (but not before the first or after the last 'a'</li>   
+          </h3>
+          </ol>
+				</section> 
+				</section>
+
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                width: 700,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
